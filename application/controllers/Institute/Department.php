@@ -32,6 +32,7 @@ class Department extends CI_Controller{
 	}
 
 	public function alldepartment(){
+		check_login_status();
 		$data['page']='alldepartment';
 		$data['title']='All Department';
 		$data['departments'] = $this->DepartmentM->all();
