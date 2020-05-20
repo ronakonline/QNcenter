@@ -25,4 +25,18 @@ class User extends  CI_Controller{
 		}
 		redirect(base_url('Institute'));
 	}
+
+	public function adduser(){
+		check_login_status();
+		$data['page']='adduser';
+		$data['title']='Add User';
+		$this->load->view('Institute/index',$data);
+	}
+
+	public function alluser(){
+		check_login_status();
+		$data['page']='alluser';
+		$data['title']='All User';
+		$this->load->view('Institute/index',$data);
+	}
 }

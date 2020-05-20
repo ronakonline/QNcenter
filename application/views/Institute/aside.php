@@ -54,16 +54,16 @@
 						<i class="icon icon-presentation-12  s-18"></i> <span>Class</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="#"><i class="icon icon-plus-square"></i>Add Class</a></li>
-						<li><a href="#"><i class="icon icon-align-justify"></i>All Class</a></li>
+						<li><a href="<?php echo base_url('Institute/Classes/addclass'); ?>"><i class="icon icon-plus-square"></i>Add Class</a></li>
+						<li><a href="<?php echo base_url('Institute/Classes/allclass'); ?>"><i class="icon icon-align-justify"></i>All Class</a></li>
 					</ul>
 				</li>
 				<li class="treeview"><a href="#">
 						<i class="icon icon-envelope  s-18"></i> <span>Post</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="#"><i class="icon icon-plus-square"></i>Add Post</a></li>
-						<li><a href="#"><i class="icon icon-align-justify"></i>All Posts</a></li>
+						<li><a href="<?php echo base_url('Institute/Post/addpost'); ?>"><i class="icon icon-plus-square"></i>Add Post</a></li>
+						<li><a href="<?php echo base_url('Institute/Post/allpost'); ?>"><i class="icon icon-align-justify"></i>All Posts</a></li>
 					</ul>
 				</li>
 				<li class="treeview"><a href="#">
@@ -78,8 +78,8 @@
 						<i class="icon icon-user  s-18"></i> <span>User</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="#"><i class="icon icon-plus-square"></i>Add User</a></li>
-						<li><a href="#"><i class="icon icon-align-justify"></i>All Users</a></li>
+						<li><a href="<?php echo base_url('Institute/User/adduser'); ?>"><i class="icon icon-plus-square"></i>Add User</a></li>
+						<li><a href="<?php echo base_url('Institute/User/alluser'); ?>"><i class="icon icon-align-justify"></i>All Users</a></li>
 					</ul>
 				</li>
 

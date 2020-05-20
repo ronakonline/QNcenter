@@ -9,5 +9,13 @@
 --- http://writing.colin-gourlay.com/safely-using-ready-before-including-jquery/
 -->
 <script>(function($,d){$.each(readyQ,function(i,f){$(f)});$.each(bindReadyQ,function(i,f){$(d).bind("ready",f)})})(jQuery,document)</script>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#summernote').summernote({
+        	height: 200,
+        });
+    });
+  </script>
 </body>
 </html>
