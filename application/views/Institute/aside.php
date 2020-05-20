@@ -38,7 +38,7 @@
 				</div>
 			</div>
 			<ul class="sidebar-menu">
-				<li class=""><a href="#">
+				<li class=""><a href="<?php echo base_url('Institute'); ?>">
 						<i class="icon icon-dashboard2  s-18"></i> <span>Dashboard</span>
 					</a>
 				</li>
@@ -59,6 +59,22 @@
 					</ul>
 				</li>
 				<li class="treeview"><a href="#">
+						<i class="icon icon-envelope  s-18"></i> <span>Post</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="#"><i class="icon icon-plus-square"></i>Add Post</a></li>
+						<li><a href="#"><i class="icon icon-align-justify"></i>All Posts</a></li>
+					</ul>
+				</li>
+				<li class="treeview"><a href="#">
+						<i class="icon icon-graduation-cap  s-18"></i> <span>Student</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="#"><i class="icon icon-plus-square"></i>Add Student</a></li>
+						<li><a href="#"><i class="icon icon-align-justify"></i>All Students</a></li>
+					</ul>
+				</li>
+				<li class="treeview"><a href="#">
 						<i class="icon icon-user  s-18"></i> <span>User</span>
 					</a>
 					<ul class="treeview-menu">
@@ -66,6 +82,7 @@
 						<li><a href="#"><i class="icon icon-align-justify"></i>All Users</a></li>
 					</ul>
 				</li>
+
 			</ul>
 		</section>
 	</aside>
