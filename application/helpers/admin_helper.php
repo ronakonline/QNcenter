@@ -29,3 +29,11 @@ if(!function_exists('check_login_status')){
 	}
 }
 
+if(!function_exists('department_list')){
+	function department_list(){
+		$ci = get_instance();
+		$ci->load->model('Institute/DepartmentM');
+		$departments = $ci->DepartmentM->all();
+		return $departments;
+	}
+}

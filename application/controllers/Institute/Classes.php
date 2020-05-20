@@ -19,8 +19,6 @@ class Classes extends CI_Controller{
 
 	public function insert(){
 		$data = $this->input->post();
-		$data['aid'] = $_SESSION['Institute']->aid;
-		$data['created']= date('Y-m-d H:i:s');
 		//print_r($data);
 		$op = $this->ClassM->add($data);
 		if($op){

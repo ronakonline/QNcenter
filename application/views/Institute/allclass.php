@@ -24,12 +24,13 @@
 							</tr>
 							</thead>
 							<tbody>
-								
+								<?php foreach ($classes as $row){ ?>
 								<tr>
-									<td></td>
-									<td></td>
+									<td><?php echo $row->cname; ?></td>
+									<td><?php echo $row->dname; ?></td>
 									<td></td>
 								</tr>
+								<?php } ?>
 								
 							</tbody>
 

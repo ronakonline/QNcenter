@@ -67,7 +67,7 @@
 					</ul>
 				</li>
 				<li class="treeview"><a href="#">
-						<i class="icon icon-graduation-cap  s-18"></i> <span>Student</span>
+						<i class="icon icon-graduation-cap  s-18"></i><span>Student</span>
 					</a>
 					<ul class="treeview-menu">
 						<li><a href="#"><i class="icon icon-plus-square"></i>Add Student</a></li>

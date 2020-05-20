@@ -29,12 +29,13 @@
 										<div class="col-sm-12">
 											<div class="form-group">
 			                                    <label for="department">Department</label>
-			                                    <select class="form-control" id="department" required>
+			                                    <select class="form-control" id="department" name="did" required>
 			                                        <option disabled selected>Select Department</option>
-			                                        <option>2</option>
-			                                        <option>3</option>
-			                                        <option>4</option>
-			                                        <option>5</option>
+			                             			<?php $departments = department_list();
+			                             				foreach ($departments as $row){
+			                             			?>
+														<option value="<?php echo $row->did; ?>"><?php echo $row->name; ?></option>
+													<?php } ?>
 			                                    </select>
 			                                </div>
 			                            </div>
@@ -42,8 +43,9 @@
 		                                <div class="col-sm-12">
                                             <div class="form-group form-float">
                                                 <div class="form-line">
-                                                    <input type="text" class="form-control" required>
-                                                    <label class="form-label">Class</label>
+
+                                                    <input type="text" class="form-control" placeholder="Class Name" name="name" required>
+
                                                 </div>
                                             </div>
                                         </div>

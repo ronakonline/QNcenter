@@ -12,7 +12,7 @@ class ClassM extends CI_Model{
 		return $op;
 	}
 	function all(){
-		$q = $this->db->where('aid',$_SESSION['Institute']->aid)->get('class');
+		$q = $this->db->query('select department.name as dname, class.name as cname,class.id from class,department where department.did=class.did and department.aid='.$_SESSION['Institute']->aid);
 		return $q->result();
 	}
 }
