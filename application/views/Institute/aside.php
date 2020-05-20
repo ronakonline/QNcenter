@@ -70,8 +70,8 @@
 						<i class="icon icon-graduation-cap  s-18"></i><span>Student</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="#"><i class="icon icon-plus-square"></i>Add Student</a></li>
-						<li><a href="#"><i class="icon icon-align-justify"></i>All Students</a></li>
+						<li><a href="<?php echo base_url('Institute/Student/addstudent'); ?>"><i class="icon icon-plus-square"></i>Add Student</a></li>
+						<li><a href="<?php echo base_url('Institute/Student/allstudent'); ?>"><i class="icon icon-align-justify"></i>All Students</a></li>
 					</ul>
 				</li>
 				<li class="treeview"><a href="#">
