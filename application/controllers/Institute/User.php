@@ -26,6 +26,12 @@ class User extends  CI_Controller{
 		redirect(base_url('Institute'));
 	}
 
+	public function Register(){
+		//$data['page']='register';
+		$data['title']='Register';
+		$this->load->view('register',$data);
+	}
+
 	public function adduser(){
 		check_login_status();
 		$data['page']='adduser';

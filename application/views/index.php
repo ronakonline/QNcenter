@@ -58,28 +58,29 @@
                 <li data-transition="slideup" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
                     <img src="<?php echo base_url();?>assets/images/slides/1.jpg" alt="slider-image" />
                     <div class="tp-caption sfl title-slide center" data-x="379" data-y="245" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">
-                        Welcome To Aquarius
+                        
                     </div>  
                     <div class="tp-caption sfr desc-slide center" data-x="306" data-y="322" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">                       
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt elit felis, at sagittis enim<br>congue et. Mauris nec auctor erat, sed cursus lectus.
+                        We provide the best in-class Institute services to reach your audience easily and effectively.<br>To make your audience more productive, we have different kind of courses too.
                     </div>                            
                 </li>
 
                 <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
                     <img src="<?php echo base_url();?>assets/images/slides/2.jpg" alt="slider-image" />
 
-                    <div class="tp-caption sfb title-slide color-white style1" data-x="15" data-y="254" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">Meet new friends,<br>and study with experts</div>
+                    <div class="tp-caption sfb title-slide color-white style1" data-x="15" data-y="254" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">Save your time,<br>and be more productive.</div>
 
                     <div class="tp-caption sfb desc-slide color-white" data-x="15" data-y="398" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tinci<br>dunt elit felis, at sagittis enim congue et. Mauris nec auctor erat,<br>sed cursus lectus.</div>
+                    Qn-Center foucuses on giving best services<br>And make your work less stressfull.
+                    </div>
 
                     <div class="tp-caption sfb center color-white flat-button-slide" data-x="15" data-y="528" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut">
-                        <a href="#">View Our courses</a>
+                        <a href="<?php echo base_url('Course');?>">View Our courses</a>
                     </div>
                 </li>
 
-                <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
-                    <img src="<?php echo base_url();?>assets/images/slides/3.jpg" alt="slider-image" />
+                <!-- <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
+                    <img src="<?php //echo base_url();?>assets/images/slides/3.jpg" alt="slider-image" />
 
                     <div class="tp-caption sfb title-slide color-white center style2" data-x="315" data-y="285" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">Welcome To Aquarius</div>
 
@@ -88,16 +89,16 @@
                     <div class="tp-caption sft center color-white flat-button-slide style1" data-x="484" data-y="463" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut">
                         <a href="#">learn more</a>
                     </div>
-                </li>
+                </li> -->
 
                 <li data-transition="slidedown" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
                     <img src="<?php echo base_url();?>assets/images/slides/4.jpg" alt="slider-image" />
 
-                    <div class="tp-caption sft sub-title" data-x="480" data-y="232" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">Course, Online Courses Template</div>
+                    <div class="tp-caption sft sub-title" data-x="480" data-y="232" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">Specialized Online Courses.</div>
 
                     <div class="tp-caption sft title-slide color-white center style3" data-x="218" data-y="300" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">we will help to learn</div>
 
-                    <div class="tp-caption sfb desc-slide color-white center style1" data-x="319" data-y="381" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut">Duis mollis, neque quis sodales accumsan, ligula neque commodo magna, in<br>tempor diam dolor nec mi. Fusce nec pretium neque.</div>                        
+                    <div class="tp-caption sfb desc-slide color-white center style1" data-x="319" data-y="381" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut">We have 100+ courses to help students to pass competitive exams.Like IELTS, JEE, NIIT, UPSC and many more.</div>                        
                 </li>
             </ul>
         </div>
@@ -131,8 +132,8 @@
                         <div class="about-us style1">
                             <h2 class="title-about-us">our story</h2>
                             <div class="desc">
-                                <p>Vut sagittis a, magna ridiculus! Scelerisque parturient! Cum duis nunc in, dignissim, porta porta enim, proin turpis egestas! Mauris dapibus sed integer placerat, scelerisque!</p>
-                                <p>Ac enim nascetur rhoncus facilisis phasellus eu sit turpis purus magna auctor nunc facilisis parturient ac tempor, montes etiam tortor rhoncus! In, aliquam. Elementum urna, tincidunt? Nisi ut urna? Arcu, odio facilisis urna magna vel, elementum integer quis nisi nisi scelerisque etiam.</p>
+                                <p>We started this service in 2019, we want to make sure all the institutes make their work less stressful and focus on their students and give them the quality education.Their audience can get all the notices and important files easily through our platform.</p>
+                                <p>Sometime students, who want to pass competitive exams with high scores, don't have the proper knowledge and guidance. So through our courses they can get some help and do best.</p>
                             </div>
                         </div><!-- /.about-us -->
                     </div><!-- /.col-md-5 -->
@@ -142,60 +143,26 @@
     </section><!-- /.flat-row -->
 
     <div class="flat-divider d88px"></div>
-
+    
     <section class="flat-row parallax parallax3">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="title-section cl-white">
-                        <h1 class="title">Search For Courses</h1>
+                    <div class="flat-divider d33px"></div>
+                    <div class="title-section cl-white style3 v3">
+                        <h1 class="title">Register with US</h1>
                         <div class="desc">
-                            <p>Vut sagittis a, magna ridiculus! Scelerisque parturient! Cum duis nunc in, dignissim, porta porta enim, proin<br> turpis egestas! Mauris dapibus sed integer placerat, scelerisque!</p>
+                            <p>We are a global branding company helping Institutes to communicate with their students<br>through Our plateform to make their work efficient.</p>
                         </div>
-                    </div><!-- /.title-section -->
-
-                    <div class="row">
-                        <div class="flat-divider d50px"></div>
-                    </div>
-
-                    <!-- Fillter courses -->
-                    <form class="flat-contact-form fillter-courses border-radius border-white text-center" id="contactform5" method="post" action="<?php echo base_url();?>assets/contact/contact-process.php">
-                        <div class="field clearfix">      
-                            <div class="wrap-type-input">
-                                <div class="wrap categories-courses">
-                                    <select class="select-field" name="appointment_services">
-                                        <option value="" selected="selected">All categories </option>
-                                        <option value="Categories 1">Categories 1</option>
-                                        <option value="Categories 2"> Categories 2</option>
-                                        <option value="Categories 3"> Categories 3</option>
-                                    </select> 
-                                </div><!-- /.wrap-select -->
-
-                                <div class="wrap courses-level">
-                                    <select class="select-field" name="appointment_services">
-                                        <option value="" selected="selected">Courses level</option>
-                                        <option value="Level 1">Level 1</option>
-                                        <option value="Level 2">Level 2</option>
-                                        <option value="Level 3">Level 3</option>
-                                    </select> 
-                                </div><!-- /.wrap-select -->
-                                
-                                <div class="wrap courses-keyword">
-                                    <input type="text" value="" placeholder="Courses keyword" name="subject-flat" id="subject-flat" >
-                                </div>
-
-                                <div class="wrap all-categories">
-                                    <button>All categories</button>
-                                </div>  
-                            </div><!-- /.wrap-type-input -->                            
-                        </div><!-- /.field -->                        
-                    </form><!-- /.comment-form -->  
+                        <a class="flat-button style1" href="<?php echo base_url('Institute/User/register') ?>">Register now!</a>
+                    </div>               
+                    <div class="flat-divider d33px"></div>  
                 </div><!-- /.col-md-12 -->
             </div><!-- /.row -->
         </div><!-- /.container -->        
     </section>
-
+    
     <!-- Flat courses -->
     <section class="flat-row pad-bottom90px">
         <div class="container">
@@ -204,7 +171,7 @@
                     <div class="title-section style1">
                         <h1 class="title">Popular Categories</h1>
                         <div class="desc">
-                            <p>Vut sagittis a, magna ridiculus! Scelerisque parturient! Cum duis nunc in, dignissim, porta porta enim, proin<br> turpis egestas! Mauris dapibus sed integer placerat, scelerisque!</p>
+                            <p>These are some popular categories, In which students have more interest<br> We provide all kind of career based courses to help you to achieve your goals!</p>
                         </div>
                         <div class="icon">
                             <img src="<?php echo base_url();?>assets/images/icon/line.png" alt="image">
@@ -457,6 +424,7 @@
     </section>*/
     ?>
     <!-- Team member style2 -->
+    <?php /*
     <section class="flat-row pad-top95px">
         <div class="container">
             <div class="row">
@@ -566,24 +534,25 @@
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section><!-- /.flat-row -->
-
+    
     <section class="flat-row bg-color-themes">        
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="flat-divider d33px"></div>
                     <div class="title-section cl-white style3 v3">
-                        <h1 class="title">We Are Aquarius</h1>
+                        <h1 class="title">Register with US</h1>
                         <div class="desc">
-                            <p>We are a global branding agency helping companies to communicate<br>through vision and imagination.</p>
+                            <p>We are a global branding company helping Institutes to communicate with their students<br>through Our plateform to make their work efficient.</p>
                         </div>
-                        <a class="flat-button style1" href="#">contact us</a>
+                        <a class="flat-button style1" href="<?php echo base_url('Institute/User/register') ?>">Register now!</a>
                     </div>               
                     <div class="flat-divider d33px"></div>
                 </div><!-- /.col-md-12 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section>
+    */?>
     <?php /* 
     <!-- Register -->
     <section class="flat-row pad-top180px">

@@ -25,37 +25,43 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div class="flat-login">
-                        <form class="flat-contact-form border-white border-large" id="contactform5" method="post" action="<?php echo base_url();?>User/User_Login/checklogin" method="post">
-                            <?php
-                                if($error!='NO_ERROR'){
-                                    echo '<div class="alert alert-danger" role="alert">';
-                                    echo "$error";
-                                    echo '</div>';
-                                }
-                            ?>
+                        <form class="flat-contact-form border-white border-large" id="contactform5" method="post" action="#" method="post">
+
                             <div class="field clearfix">      
                                 <div class="wrap-type-input">                    
                                     <div class="input-wrap name">
-                                        <p>Username or email address *</p>
-                                        <input type="text" value="" tabindex="1" name="username" id="username" required>
+                                        <p>Full Name*</p>
+                                        <input type="text" value="" tabindex="1" name="name" id="name" required>
+                                    </div>
+                                    <div class="input-wrap email">
+                                        <p>Username *</p>
+                                        <input type="text" value="" tabindex="2" name="username" id="username" required>
+                                    </div>                                    
+                                </div>
+                            
+                            
+                                <div class="wrap-type-input">                    
+                                    <div class="input-wrap name">
+                                        <p>Email address *</p>
+                                        <input type="text" value="" tabindex="3" name="email" id="email" required>
                                     </div>
                                     <div class="input-wrap email">
                                         <p>Password *</p>
-                                        <input type="password" value="" tabindex="2" name="password" id="password" required>
+                                        <input type="password" value="" tabindex="4" name="password" id="password" required>
                                     </div>                                    
                                 </div>
                             </div>
                             <div class="submit-wrap">
                                 <button type="submit">login</button>
                             </div>
-                            <div class="option-login">
+                            <!-- <div class="option-login">
                                 <div class="remember">
                                     <input type="checkbox" name="check3" id="check3" class="css-checkbox" checked="checked"/><label for="check3" class="css-label">Remember me</label>
                                 </div>
                                 <div class="forgot">
                                     <a href="#">I forgot my password</a>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- <div class="create-account">
                                 <p>Not registered? No problem</p>
                                 <div class="link-submit-wrap">
@@ -63,9 +69,6 @@
                                 </div>
                             </div> -->
                         </form><!-- /.comment-form -->
-                        <div class="submit-wrap">
-                            <a href="<?php echo base_url('Institute/') ?>"><button type="submit">Login&nbsp;&nbsp;Institute</button></a>
-                        </div>
                     </div><!-- /.flat-login -->
                 </div><!-- /.col-md-6 .col-md-offset-3 -->
             </div><!-- /.row -->
