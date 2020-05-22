@@ -98,7 +98,7 @@
 
                     <div class="tp-caption sft title-slide color-white center style3" data-x="218" data-y="300" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">we will help to learn</div>
 
-                    <div class="tp-caption sfb desc-slide color-white center style1" data-x="319" data-y="381" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut">We have 100+ courses to help students to pass competitive exams.Like IELTS, JEE, NIIT, UPSC and many more.</div>                        
+                    <div class="tp-caption sfb desc-slide color-white center style1" data-x="319" data-y="381" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut">We have 100+ courses to help students to pass competitive exams.<br>Like IELTS, JEE, NIIT, UPSC and many more.</div>
                 </li>
             </ul>
         </div>
@@ -155,7 +155,7 @@
                         <div class="desc">
                             <p>We are a global branding company helping Institutes to communicate with their students<br>through Our plateform to make their work efficient.</p>
                         </div>
-                        <a class="flat-button style1" href="<?php echo base_url('Institute/User/register') ?>">Register now!</a>
+                        <a class="flat-button style1" href="<?php echo base_url('Institute/register') ?>">Register now!</a>
                     </div>               
                     <div class="flat-divider d33px"></div>  
                 </div><!-- /.col-md-12 -->

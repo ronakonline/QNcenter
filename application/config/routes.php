@@ -55,3 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['(?i)Institute'] = 'Institute/Dashboard';
 $route['(?i)Institute/login'] = 'Institute/User';
+$route['(?i)Institute/Register'] = 'Institute/User/register';
+$route['(?i)User/verifyemail/(:any)/(:any)'] = 'Institute/User/verifyemail';
