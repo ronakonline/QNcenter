@@ -1,12 +1,9 @@
 <?php
 
-class Dashboard extends CI_Controller{
-    public function index(){
-        if($_SESSION['user']){
-                $data['title']="Dashboard";
-                 $this->load->view('dashboard',$data);
-        }else{
-            redirect('User/User_Login');
-        }
-    }
+class Dashboard extends  CI_Controller{
+	public  function  index(){
+		check_userlogin_status();
+		$data['page'] = 'Dashboard';
+		$this->load->view('User/index', $data);
+	}
 }

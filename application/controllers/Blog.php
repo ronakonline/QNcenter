@@ -5,7 +5,7 @@ class Blog extends CI_Controller {
 
 	public function index()
 	{
-        $data['title'] = "Blog";        
-        $this->load->view('Blog',$data);
+        $data['title'] = "Blogs";        
+        $this->load->view('blog_categories',$data);
 	}
 }

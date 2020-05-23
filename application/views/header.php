@@ -17,12 +17,12 @@
                             <nav id="mainnav" class="mainnav">
                                 <ul class="menu"> 
                                     <li class="home"><a href="<?php echo base_url(); ?>">Home</a></li>
-                                    <li><a href="<?php echo base_url(); ?>Course">Courses</a></li>
+                                    
                                     <li><a href="<?php echo base_url(); ?>Institute_list">Institutes</a></li>
                                     <li><a href="<?php echo base_url(); ?>Aboutus">About Us</a></li>
                                     <li><a href="<?php echo base_url(); ?>Contactus">Contact Us</a></li>
                                     <li><a href="<?php echo base_url(); ?>Blog">Blog </a></li>
-                                    <li><a href="<?php echo base_url();?>User/User_Login">Login</a></li>
+                                    <li><a href="<?php echo base_url();?>User/Login">Login</a></li>
                                 </ul><!-- /.menu -->
                             </nav><!-- /.mainnav -->  
                         </div><!-- /.nav-wrap -->

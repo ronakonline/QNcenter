@@ -6,15 +6,17 @@ class User extends  CI_Controller{
 	{
 		parent::__construct();
 		$this->load->model('Institute/UserM');
-	}
+	}	
 
 	public function  index(){
-		$this->load->view('Institute/login');
+			$this->load->view('Institute/login');
 	}
+
 	public  function  logout(){
 		session_destroy();
 		redirect(base_url('Institute/login'));
 	}
+	
 	public  function  login(){
 		$data = $this->input->post();
 		$op = $this->UserM->checklogin($data);

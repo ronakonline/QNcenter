@@ -27,11 +27,11 @@
             <div class="row">
                 <div class="col-md-12">                    
                     <div class="page-title-heading">
-                        <h1 class="title">Course Categories</h1>
+                        <h1 class="title">Blog Categories</h1>
                         <div class="breadcrumbs">
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li>Course Categories</li>
+                                <li>Blog Categories</li>
                             </ul>                   
                         </div>
                     </div><!-- /.page-title-captions --> 
@@ -41,6 +41,7 @@
         </div><!-- /.container -->                      
     </div><!-- /.page-title -->
 
+    <?php /* 
     <!-- Fillter courses -->
     <section class="flat-row pad-top50px pad-bottom0px">
         <div class="container">
@@ -53,7 +54,7 @@
                                 <div class="wrap-type-input">
                                     <div class="wrap categories-courses">
                                         <select class="select-field categories-courses" name="appointment_services">
-                                            <option value="" selected="selected">All courses </option>
+                                            <option value="" selected="selected">All Blog </option>
                                             <option value="Categories 1">Courses 1</option>
                                             <option value="Categories 2">Courses 2</option>
                                             <option value="Categories 3">Courses 3</option>
@@ -82,7 +83,7 @@
             </div><!-- /.row -->
         </div><!-- /.container -->        
     </section>
-
+    */?>
     <!-- Flat courses -->
     <section class="flat-row pad-top50px pad-bottom90px">
         <div class="container">

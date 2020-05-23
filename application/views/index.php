@@ -61,7 +61,7 @@
                         
                     </div>  
                     <div class="tp-caption sfr desc-slide center" data-x="306" data-y="322" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">                       
-                        We provide the best in-class Institute services to reach your audience easily and effectively.<br>To make your audience more productive, we have different kind of courses too.
+                        We provide the best in-class Institute services to reach your audience easily and effectively.<br>To make your audience more productive, we have different kind of blogs too.
                     </div>                            
                 </li>
 
@@ -75,7 +75,7 @@
                     </div>
 
                     <div class="tp-caption sfb center color-white flat-button-slide" data-x="15" data-y="528" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut">
-                        <a href="<?php echo base_url('Course');?>">View Our courses</a>
+                        <a href="<?php echo base_url('Blog');?>">View Our Blogs</a>
                     </div>
                 </li>
 
@@ -94,11 +94,11 @@
                 <li data-transition="slidedown" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
                     <img src="<?php echo base_url();?>assets/images/slides/4.jpg" alt="slider-image" />
 
-                    <div class="tp-caption sft sub-title" data-x="480" data-y="232" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">Specialized Online Courses.</div>
+                    <div class="tp-caption sft sub-title" data-x="480" data-y="232" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">Specialized Online Blogs.</div>
 
                     <div class="tp-caption sft title-slide color-white center style3" data-x="218" data-y="300" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">we will help to learn</div>
 
-                    <div class="tp-caption sfb desc-slide color-white center style1" data-x="319" data-y="381" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut">We have 100+ courses to help students to pass competitive exams.Like IELTS, JEE, NIIT, UPSC and many more.</div>                        
+                    <div class="tp-caption sfb desc-slide color-white center style1" data-x="319" data-y="381" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut">We have 100+ category based blogs to help students to be updated.<br/>Like Latest News, Trending technologies and many more.</div>                        
                 </li>
             </ul>
         </div>
@@ -132,8 +132,9 @@
                         <div class="about-us style1">
                             <h2 class="title-about-us">our story</h2>
                             <div class="desc">
-                                <p>We started this service in 2019, we want to make sure all the institutes make their work less stressful and focus on their students and give them the quality education.Their audience can get all the notices and important files easily through our platform.</p>
-                                <p>Sometime students, who want to pass competitive exams with high scores, don't have the proper knowledge and guidance. So through our courses they can get some help and do best.</p>
+                                <p>We started this service in 2019, we want to make sure all the institutes make their work less stressful and focus on their students and give them the quality education.Their audience can get all the notices and important files easily through our plateform.</p>
+                                <!-- <p>Sometime students, who want to pass competitive exams with high scores, don't have the proper knowledge and guidance. So through our courses they can get some help and do best.</p> -->
+                                <p>Sometimes students don't know what are the trending things going on their field, to cover this we have category based blogs, which gives you the perfect knowledge to make yourself to be updated.</p>
                             </div>
                         </div><!-- /.about-us -->
                     </div><!-- /.col-md-5 -->
@@ -171,7 +172,7 @@
                     <div class="title-section style1">
                         <h1 class="title">Popular Categories</h1>
                         <div class="desc">
-                            <p>These are some popular categories, In which students have more interest<br> We provide all kind of career based courses to help you to achieve your goals!</p>
+                            <p>These are some popular categories, In which students have more interest<br> We provide all kind of career based blogs to help you to achieve your goals!</p>
                         </div>
                         <div class="icon">
                             <img src="<?php echo base_url();?>assets/images/icon/line.png" alt="image">

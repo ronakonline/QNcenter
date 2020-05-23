@@ -26,13 +26,6 @@
                 <div class="col-md-6 col-md-offset-3">
                     <div class="flat-login">
                         <form class="flat-contact-form border-white border-large" id="contactform5" method="post" action="<?php echo base_url();?>User/User_Login/checklogin" method="post">
-                            <?php
-                                if($error!='NO_ERROR'){
-                                    echo '<div class="alert alert-danger" role="alert">';
-                                    echo "$error";
-                                    echo '</div>';
-                                }
-                            ?>
                             <div class="field clearfix">      
                                 <div class="wrap-type-input">                    
                                     <div class="input-wrap name">
