@@ -25,12 +25,12 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div class="flat-login">
-                        <form class="flat-contact-form border-white border-large" id="contactform5" method="post" action="<?php echo base_url();?>User/User_Login/checklogin" method="post">
+                        <form action="<?php echo base_url();?>User/Login/check_login" class="flat-contact-form border-white border-large" id="contactform5"  method="post">
                             <div class="field clearfix">      
                                 <div class="wrap-type-input">                    
                                     <div class="input-wrap name">
                                         <p>Email*</p>
-                                        <input type="text" value="" tabindex="1" name="username" id="username" required>
+                                        <input type="email" value="" tabindex="1" name="email" id="email" required>
                                     </div>
                                     <div class="input-wrap email">
                                         <p>Password *</p>
@@ -39,7 +39,7 @@
                                 </div>
                             </div>
                             <div class="submit-wrap">
-                                <button type="submit">login</button>
+                                <button type="submit" tabindex="3">login</button>
                             </div>
                             <div class="option-login">
                                 <div class="remember">

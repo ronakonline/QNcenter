@@ -19,15 +19,17 @@ class Login extends CI_Controller {
         redirect(base_url('User/Login'));
     }
 
-    public  function  login(){
+    public  function  check_login(){
         $data = $this->input->post();
         $op = $this->UserM->checklogin($data);
+        
         if($op!=false){
             $_SESSION['User'] = $op;
         }else{
             $_SESSION['error'] = "Incorrect Username or Password";
         }
-        redirect(base_url('User'));
+        
+        redirect(base_url('User/Home'));
     }
 
 }
