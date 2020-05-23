@@ -790,7 +790,7 @@ input[type="color"],
 }
 
 #mainnav > ul > li {
-	float: left;
+	/*float: left;*/
 }
 
 #mainnav ul li {
