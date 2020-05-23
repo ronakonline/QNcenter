@@ -25,13 +25,13 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div class="flat-login">
-                        <form class="flat-contact-form border-white border-large" id="contactform5" method="post" action="#" method="post">
+                        <form class="flat-contact-form border-white border-large" id="contactform5" method="post" action="<?php echo base_url('Institute/User/register_institute'); ?>" method="post">
 
                             <div class="field clearfix">      
                                 <div class="wrap-type-input">                    
                                     <div class="input-wrap name">
-                                        <p>Full Name*</p>
-                                        <input type="text" value="" tabindex="1" name="name" id="name" required>
+                                        <p>Institute Name*</p>
+                                        <input type="text" value="" tabindex="1" name="iname" id="name" required>
                                     </div>
                                     <div class="input-wrap email">
                                         <p>Username *</p>
@@ -41,18 +41,18 @@
                             
                             
                                 <div class="wrap-type-input">                    
-                                    <div class="input-wrap name">
-                                        <p>Email address *</p>
+                                    <div class="input-wrap email">
+                                        <p>Email*</p>
                                         <input type="text" value="" tabindex="3" name="email" id="email" required>
                                     </div>
-                                    <div class="input-wrap email">
+                                    <div class="input-wrap">
                                         <p>Password *</p>
                                         <input type="password" value="" tabindex="4" name="password" id="password" required>
                                     </div>                                    
                                 </div>
                             </div>
                             <div class="submit-wrap">
-                                <button type="submit">login</button>
+                                <button type="submit">Register</button>
                             </div>
                             <!-- <div class="option-login">
                                 <div class="remember">
@@ -95,4 +95,33 @@
     <!-- Javascript -->
     <?php $this->load->view('scripts'); ?>
 </body>
+    <script>
+    $("#email").on("change",function () {
+         var email= $("#email").val();
+        $.ajax({
+
+            url:"<?php echo base_url('Institute/User/checkemail'); ?>",
+            type:"post",
+            data: {
+                email : email
+            },
+            success:function (response) {
+                if(response==1){
+                    alertify.error("Email Already Exists");
+                    $("#email").val("");
+                }
+
+            }
+
+        })
+    });
+    $("#password").on("change",function () {
+        var pass = $("#password").val();
+        if(pass.length<8){
+            $("#password").val("");
+            alertify.error("Password must be 8 Character Long");
+        }
+
+    });
+</script>
 </html>
