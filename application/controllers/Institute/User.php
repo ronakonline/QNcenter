@@ -29,7 +29,7 @@ class User extends  CI_Controller{
 		redirect(base_url('Institute'));
 	}
 
-	public function Register(){
+	public function register(){
 		//$data['page']='register';
 		$data['title']='Register';
 		$this->load->view('register',$data);

@@ -20,8 +20,8 @@
                                 <div class="body">
                                     <div class="form-group form-float">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="username" required/>
-                                            <label class="form-label">Username</label>
+                                            <input type="email" class="form-control" name="username" required/>
+                                            <label class="form-label">Email</label>
                                         </div>
                                     </div>
                                     <div class="form-group form-float">
@@ -47,8 +47,7 @@
                         <div class="pt-3 mb-5">
                             <p>Lorem ipsum dolor sit amet,  sapiente tenetur ut, veritatis.</p>
                         </div>
-                            <input type="submit" class="btn btn-light s-14 pl-4 pr-4 text-primary" value="Create Account">
-
+                            <a href="<?php echo base_url('Institute/register') ?>"><button class="btn btn-light s-14 pl-4 pr-4 text-primary">Create Account</button></a>
 
                         </div>
                     </div>
