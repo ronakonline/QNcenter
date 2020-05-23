@@ -1,7 +1,6 @@
 <?php $this->load->view('Institute/css-links'); ?>
 <div id="app">
-	<?php echo errormsg();
-	echo successmsg();?>
+	<?php echo errormsg(); ?>
 <main>
     <div id="primary" class="p-t-b-100 height-full">
         <div class="container">
