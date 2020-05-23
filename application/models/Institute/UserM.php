@@ -30,4 +30,9 @@ class UserM extends CI_Model{
 		$this->db->update('institute');
 		return array($op = $this->db->affected_rows() ,$v = $verified->result());
 	}
+
+	public function everified($email){
+		$q = $this->db->where('email',$email)->where('everified',1)->get('institute');
+		return $q->result();
+	}
 }

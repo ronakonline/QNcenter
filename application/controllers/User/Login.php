@@ -9,8 +9,9 @@ class Login extends CI_Controller {
         $this->load->model('User/UserM');
     }
 
-	public function index(){            
-            $this->load->view('login');
+	public function index(){
+    	$data['title']='Login || QN-Center';
+            $this->load->view('login',$data);
 	}
 
     public  function  logout(){

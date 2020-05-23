@@ -22,7 +22,17 @@ if(!function_exists('successmsg')){
 if(!function_exists('check_login_status')){
 	function check_login_status(){
 		if(isset($_SESSION['Institute'])){
-			return;
+			$ci = get_instance();
+			$ci->load->model('Institute/UserM');
+			$op = $ci->UserM->everified($_SESSION['Institute']->email);
+			if(count($op)>=1) {
+				return;
+			}else{
+				$_SESSION['iemail']=$_SESSION['Institute']->email;
+				$_SESSION['verification_code']=$_SESSION['Institute']->verification_code;
+				redirect(base_url('Institute/User/verify'));
+
+			}
 		}else{
 			redirect('Institute/login');
 		}

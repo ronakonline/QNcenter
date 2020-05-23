@@ -29,7 +29,7 @@
                             <div class="field clearfix">      
                                 <div class="wrap-type-input">                    
                                     <div class="input-wrap name">
-                                        <p>Username or email address *</p>
+                                        <p>Email*</p>
                                         <input type="text" value="" tabindex="1" name="username" id="username" required>
                                     </div>
                                     <div class="input-wrap email">
