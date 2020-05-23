@@ -22,6 +22,7 @@ class User extends  CI_Controller{
 		$data = $this->input->post();
 		$op = $this->UserM->checklogin($data);
 		if($op!=false){
+			session_destroy();
 			$_SESSION['Institute'] = $op;
 		}else{
 			$_SESSION['error'] = "Incorrect Username or Password";

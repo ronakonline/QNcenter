@@ -33,10 +33,7 @@
                                         <p>Institute Name*</p>
                                         <input type="text" value="" tabindex="1" name="iname" id="name" required>
                                     </div>
-                                    <div class="input-wrap email">
-                                        <p>Username *</p>
-                                        <input type="text" value="" tabindex="2" name="username" id="username" required>
-                                    </div>                                    
+
                                 </div>
                             
                             
