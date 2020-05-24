@@ -19,7 +19,7 @@ class UserM extends CI_Model{
 		return $q;
 	}
 	public function checkemail($email){
-		$q = $this->db->where('email',$email)->where('everified',1)->get('institute');
+		$q = $this->db->where('email',$email)->get('institute');
 		return $q->result();
 	}
 
