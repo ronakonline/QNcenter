@@ -17,7 +17,8 @@
     <header id="header" class="header clearfix"> 
         <?php $this->load->view('header'); ?>
     </header><!-- /.header -->
-    
+    <?php echo usererrormsg();
+    echo usersuccessmsg();?>
          
     <!-- Login -->
     <div class="flat-row pad-top50px">

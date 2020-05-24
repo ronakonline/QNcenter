@@ -10,8 +10,9 @@ class Home extends CI_Controller {
     }
 
 	public function index(){
+		check_userlogin_status();
     	$data['title']='Home || QN-Center';
         $this->load->view('User/index',$data);
 	}
-
+	
 }
