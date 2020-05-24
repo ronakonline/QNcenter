@@ -57,9 +57,12 @@
                                 </div>
                             </div> -->
                         </form><!-- /.comment-form -->
-                        <div class="submit-wrap">
-                            <a href="<?php echo base_url('Institute/') ?>"><button type="submit">Login&nbsp;&nbsp;Institute</button></a>
-                        </div>
+                        <div class="create-account">
+                                
+                                <div class="link-submit-wrap">
+                                    <a href="<?php echo base_url('Institute/') ?>">Login&nbsp;&nbsp;Institute</a>
+                                </div>
+                            </div>
                     </div><!-- /.flat-login -->
                 </div><!-- /.col-md-6 .col-md-offset-3 -->
             </div><!-- /.row -->

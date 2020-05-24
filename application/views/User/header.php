@@ -25,7 +25,7 @@
                                         
                                          <img  width="60" height="60" src="<?php echo base_url('assets/images/teacher/1.png'); ?>" class="rounded dropdown-toggle" data-toggle="dropdown">
                                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profile</a></li>
+                                          <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url('User/Profile'); ?>">Profile</a></li>
                                           <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url('User/Login/logout'); ?>">Logout</a></li>
                                         </ul>
                                     </div>

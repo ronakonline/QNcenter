@@ -10,8 +10,14 @@ class Login extends CI_Controller {
     }
 
 	public function index(){
-    	$data['title']='Login || QN-Center';
-            $this->load->view('login',$data);
+    	if (isset($_SESSION['User'])) {
+            redirect(base_url('User/Home'));
+        }
+        else{
+            $data['title']='Login || QN-Center';
+            $this->load->view('login',$data);        
+        }
+                
 	}
 
     public  function  logout(){
