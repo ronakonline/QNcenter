@@ -36,4 +36,13 @@ class Classes extends CI_Controller{
 		$data['classes'] = $this->ClassM->all();
 		$this->load->view('Institute/index',$data);
 	}
+
+	public  function all_class_by_department(){
+		$did = $_POST['did'];
+		$classes = $this->ClassM->all_class_by_department($did);
+		foreach ($classes as $row){
+			echo '<option value="'.$row->id.'">'.$row->name.'</option>';
+		}
+
+	}
 }

@@ -22,7 +22,7 @@
 					<div class="card">
 						<div class="card-body b-b">
 							<!-- <h4>Add Class</h4> -->
-							<form class="form-material mt-4" action="insert" method="post">
+							<form class="form-material mt-4" action="<?php echo base_url('Institute/Post/insert'); ?>"  method="post">
 								<!-- Input -->
 								<div class="body">
 									<div class="row clearfix">
@@ -30,12 +30,12 @@
 										<div class="col-sm-12">
 											<div class="form-group">
 			                                    <label for="department">Department</label>
-			                                    <select class="form-control" id="department" required>
-			                                        <option disabled selected>Select Department</option>
-			                                        <option>2</option>
-			                                        <option>3</option>
-			                                        <option>4</option>
-			                                        <option>5</option>
+			                                    <select class="form-control" id="department" name="did" required>
+													<option disabled selected>Select Department</option>
+													<?php $departemnets = department_list();
+													foreach ($departemnets as $row){ ?>
+													<option value="<?php echo $row->did; ?>"><?php echo $row->name; ?></option>
+													<?php } ?>
 			                                    </select>
 			                                </div>
 			                            </div>
@@ -43,22 +43,24 @@
 		                                <div class="col-sm-12">
 											<div class="form-group">
 			                                    <label for="department">Class</label>
-			                                    <select class="form-control" id="class" required>
-			                                        <option disabled selected>Select Class</option>
-			                                        <option>2</option>
-			                                        <option>3</option>
-			                                        <option>4</option>
-			                                        <option>5</option>
+			                                    <select class="form-control" id="class" name="cid" required>
+													<option disabled selected>Select Class</option>
+
 			                                    </select>
 			                                </div>
 			                            </div>
+										<div class="col-sm-12">
+											<div class="form-group">
+												<label for="department">Title</label>
+												<input type="text" class="form-control" placeholder="Enter Post Title" name="title" required>
+											</div>
+										</div>
 
 			                            <div class="col-sm-12">
 											<div class="form-group">
 												<label for="department">Post</label>
-			                            		<div id="summernote">
-			                            			<p></p>
-			                            		</div>
+												<textarea required id="summernote" name="post">
+												</textarea>
 			                            	</div>
 			                            </div>
 									</div>
@@ -78,3 +80,4 @@
 
 
 </div>
+

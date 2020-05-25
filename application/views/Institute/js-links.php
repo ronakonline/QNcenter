@@ -17,5 +17,22 @@
         });
     });
   </script>
+<script>
+	$("#department").on("change",function () {
+		var did = $("#department").val();
+		$.ajax({
+			url:"<?php echo base_url('Institute/Classes/all_class_by_department'); ?>",
+			type:"post",
+			data : {
+					did : did
+			},
+			success:function (response) {
+				$("#class").append(response)
+			}
+
+		})
+	})
+</script>
+
 </body>
 </html>

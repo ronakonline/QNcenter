@@ -21,4 +21,18 @@ class Post extends  CI_Controller{
 		$data['title']='All Posts';
 		$this->load->view('Institute/index',$data);
 	}
+
+	public  function  insert(){
+		check_login_status();
+		$data = $this->input->post();
+		$data['aid'] = $_SESSION['Institute']->aid;
+
+		$op = $this->PostM->insert($data);
+		if($op){
+			$_SESSION['success']="Post Created";
+		}else{
+			$_SESSION['error']="Error Occurred";
+		}
+		redirect('Institute/Post/addpost');
+	}
 }

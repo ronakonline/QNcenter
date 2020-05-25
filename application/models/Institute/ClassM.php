@@ -15,4 +15,8 @@ class ClassM extends CI_Model{
 		$q = $this->db->query('select department.name as dname, class.name as cname,class.id from class,department where department.did=class.did and department.aid='.$_SESSION['Institute']->aid);
 		return $q->result();
 	}
+	function  all_class_by_department($did){
+		$q = $this->db->where('did',$did)->get('class');
+		return $q->result();
+	}
 }
