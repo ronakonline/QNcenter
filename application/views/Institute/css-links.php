@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="icon" href="assets/img/basic/favicon.ico" type="image/x-icon">
-	<title>Paper</title>
+	<title><?php echo $title; ?></title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="<?php echo base_url();?>assets/admin/css/app.css">
 

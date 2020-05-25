@@ -26,7 +26,11 @@ if(!function_exists('check_login_status')){
 			$ci->load->model('Institute/UserM');
 			$op = $ci->UserM->everified($_SESSION['Institute']->email);
 			if(count($op)>=1) {
-				return;
+				if($_SESSION['Institute']->averified==1) {
+					return;
+				}else{
+					redirect(base_url('Institute/verify'));
+				}
 			}else{
 				$_SESSION['iemail']=$_SESSION['Institute']->email;
 				$_SESSION['verification_code']=$_SESSION['Institute']->verification_code;

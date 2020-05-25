@@ -58,6 +58,7 @@ $route['(?i)Institute'] = 'Institute/Dashboard';
 $route['(?i)Institute/login'] = 'Institute/User';
 $route['(?i)Institute/Register'] = 'Institute/User/register';
 $route['(?i)User/verifyemail/(:any)/(:any)'] = 'Institute/User/verifyemail';
+$route['Institute/verify'] = 'Institute/Dashboard/verify';
 
 //Super Admin Routes
 $route['(?i)Sadmin']='Sadmin/Dashboard';
