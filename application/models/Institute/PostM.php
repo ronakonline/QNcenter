@@ -13,4 +13,9 @@ class PostM extends CI_Model{
 		$q = $this->db->query('insert into '.$this->table.' values(null,'.$data['aid'].','.$data['did'].','.$data['cid'].',null,"'.addslashes($data['title']).'","'.addslashes($data['post']).'",now())');
 		return $q;
 	}
+
+	function all(){
+		$q = $this->db->where('aid',$_SESSION['Institute']->aid)->get($this->table);
+		return $q->result();
+	}
 }
