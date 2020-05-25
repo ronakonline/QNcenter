@@ -53,7 +53,12 @@ $route['default_controller'] = 'Home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+//Institute Routes
 $route['(?i)Institute'] = 'Institute/Dashboard';
 $route['(?i)Institute/login'] = 'Institute/User';
 $route['(?i)Institute/Register'] = 'Institute/User/register';
 $route['(?i)User/verifyemail/(:any)/(:any)'] = 'Institute/User/verifyemail';
+
+//Super Admin Routes
+$route['(?i)Sadmin']='Sadmin/Dashboard';
+$route['(?i)Sadmin/(?i)login'] = 'Sadmin/User';
