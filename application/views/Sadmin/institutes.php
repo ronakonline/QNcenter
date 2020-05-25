@@ -42,7 +42,19 @@
 									<?php }else{ ?>
 										<td>NO</td>
 									<?php } ?>
-									<td></td>
+									<td>
+										<div class="dropdown">
+										  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    Action
+										  </button>
+										  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    <a class="dropdown-item" href="#">Edit</a>
+										    <a class="dropdown-item" href="#">Delete</a>
+										    <a class="dropdown-item" href="#">Verify</a>
+										    <a class="dropdown-item" href="#">Banned</a>
+										  </div>
+										</div>
+									</td>
 								</tr>
 							<?php } ?>
 							</tbody>
