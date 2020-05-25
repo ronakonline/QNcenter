@@ -20,19 +20,25 @@
 							<tr>
 								<th>Username</th>
 								<th>Department</th>
-								<th>Post</th>
+								<th>Class</th>
+								<th>Post Title</th>
 								<th>Action</th>
 							</tr>
 							</thead>
 							<tbody>
-								
+								<?php foreach ($posts as $row){ ?>
 								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
+									<?php if($row->uid==null){ ?>
+									<td><?php echo $_SESSION['Institute']->name; ?></td>
+									<?php }else{ ?>
+										<td><?php echo $row->uid; ?></td>
+									<?php } ?>
+									<td><?php echo $row->did; ?></td>
+									<td><?php echo $row->cid; ?></td>
+									<td><?php echo $row->title; ?></td>
 									<td></td>
 								</tr>
-								
+								<?php } ?>
 							</tbody>
 
 						</table>

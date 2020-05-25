@@ -19,6 +19,7 @@ class Post extends  CI_Controller{
 		check_login_status();
 		$data['page']='allpost';
 		$data['title']='All Posts';
+		$data['posts'] = $this->PostM->all();
 		$this->load->view('Institute/index',$data);
 	}
 
