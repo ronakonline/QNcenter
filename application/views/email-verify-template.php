@@ -116,17 +116,17 @@
 											<td class="tbrr p30-15" style="padding: 60px 30px; border-radius:26px 26px 0px 0px;" bgcolor="#12325c">
 												<table width="100%" border="0" cellspacing="0" cellpadding="0">
 													<tr>
-														<td class="h1 pb25" style="color:#ffffff; font-family:Muli, Arial,sans-serif; font-size:40px; line-height:46px; text-align:center; padding-bottom:25px;">Welcome, Emily Garrett</td>
+														<td class="h1 pb25" style="color:#ffffff; font-family:Muli, Arial,sans-serif; font-size:32px; line-height:46px; text-align:center; padding-bottom:25px;">Welcome, <?php echo $_SESSION['iemail']; ?></td>
 													</tr>
 													<tr>
-														<td class="text-center pb25" style="color:#c1cddc; font-family:Muli, Arial,sans-serif; font-size:16px; line-height:30px; text-align:center; padding-bottom:25px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span class="m-hide"><br /></span>tempor incididunt ut labore et dolore magna aliqua.</td>
+														<td class="text-center pb25" style="color:#c1cddc; font-family:Muli, Arial,sans-serif; font-size:16px; line-height:30px; text-align:center; padding-bottom:25px;">Thank you for Choosing QN-Center. We are happy to have you as our member<span class="m-hide"><br /></span>You can verify your account by clicking on Click here button below.</td>
 													</tr>
 													<!-- Button -->
 													<tr>
 														<td align="center">
 															<table class="center" border="0" cellspacing="0" cellpadding="0" style="text-align:center;">
 																<tr>
-																	<td class="pink-button text-button" style="background:#ff6666; color:#c1cddc; font-family:Muli, Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold;"><a href="#" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">CLICK HERE</span></a></td>
+																	<td class="pink-button text-button" style="background:#ff6666; color:#c1cddc; font-family:Muli, Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold;"><a href="<?php echo base_url('User/verifyemail/').$_SESSION['iemail'].'/'.$_SESSION['verification_code']; ?>" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">CLICK HERE</span></a></td>
 																</tr>
 															</table>
 														</td>
@@ -160,10 +160,10 @@
 											</td>
 										</tr>
 										<tr>
-											<td class="text-footer1 pb10" style="color:#c1cddc; font-family:Muli, Arial,sans-serif; font-size:16px; line-height:20px; text-align:center; padding-bottom:10px;">Bussy - Free HTML Email Template</td>
+											<td class="text-footer1 pb10" style="color:#c1cddc; font-family:Muli, Arial,sans-serif; font-size:16px; line-height:20px; text-align:center; padding-bottom:10px;">QN-Center</td>
 										</tr>
 										<tr>
-											<td class="text-footer2" style="color:#8297b3; font-family:Muli, Arial,sans-serif; font-size:12px; line-height:26px; text-align:center;">East Pixel Bld. 99, Creative City 9000, <br />Republic of Design</td>
+											<td class="text-footer2" style="color:#8297b3; font-family:Muli, Arial,sans-serif; font-size:12px; line-height:26px; text-align:center;">Ahmedabad , Gujarat<br />All rights reserved</td>
 										</tr>
 									</table>
 								</td>
