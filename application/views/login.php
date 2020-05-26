@@ -58,11 +58,13 @@
                             </div> -->
                         </form><!-- /.comment-form -->
                         <div class="create-account">
-                                
-                                <div class="link-submit-wrap">
-                                    <a href="<?php echo base_url('Institute/') ?>">Login&nbsp;&nbsp;Institute</a>
-                                </div>
+                            <div class="link-submit-wrap">
+                                <a href="<?php echo base_url('Institute/') ?>">Login&nbsp;&nbsp;Institute</a>
                             </div>
+                            <div class="forgot text-center">
+                                Don't have an account? <a style="color: blue;font-size: 17px;" href="<?php echo base_url('Institute/register') ?>">Register now!</a>
+                            </div>
+                        </div>
                     </div><!-- /.flat-login -->
                 </div><!-- /.col-md-6 .col-md-offset-3 -->
             </div><!-- /.row -->
