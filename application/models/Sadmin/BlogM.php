@@ -9,9 +9,16 @@ class BlogM extends  CI_Model{
 		$this->table = 'blog';
 	}
 
+
+
 	public function  all(){
-		$q = $this->db->get($this->table);
-		return $q->result();
+		
+		$this->db->select('institute.name as name, blog.title, blog.banner, blog.banner, blog.created');
+        $this->db->from('blog');
+        
+        $this->db->join('institute','blog.author=institute.aid','left');
+        $q = $this->db->get();
+        return $q->result();
 	}
 
 	public function insert($data,$picture){

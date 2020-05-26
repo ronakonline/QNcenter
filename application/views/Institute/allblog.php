@@ -19,7 +19,6 @@
 							<thead>
 							<tr>
 								<th>Title</th>
-								<th>Author</th>
 								<th>Banner</th>
 								<th>Date</th>
 								<th>Action</th>
@@ -28,13 +27,7 @@
 							<tbody>
 								<?php foreach ($blogs as $row){ ?>
 								<tr>
-									<td><?php echo $row->title; ?></td>
-									<?php if($row->name==null){ ?>
-									<td><?php echo "QN-Center" ?></td>
-									<?php }else{ ?>
-										<td><?php echo $row->name; ?></td>
-									<?php } ?>
-									
+									<td><?php echo $row->title; ?></td>								
 									<td><img src="<?php echo base_url('assets/images/blog/').$row->banner ?>" style="width: 150px;height: 100px;"></td>
 									<td><?php echo $row->created; ?></td>
 									<td></td>
