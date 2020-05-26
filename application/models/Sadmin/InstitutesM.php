@@ -10,8 +10,23 @@ class InstitutesM extends  CI_Model{
 	}
 
 	public function  allinstitutes(){
-		$q = $this->db->get($this->table);
+		$q = $this->db->where('is_deleted',0)->get($this->table);
 		return $q->result();
+	}
+
+	function verify($id){
+		$q = $this->db->set('averified',1)->where('aid',$id)->update($this->table);
+		return $q;
+	}
+
+	function delete($id){
+		$q = $this->db->set('is_deleted',1)->where('aid',$id)->update($this->table);
+		return $q;
+	}
+
+	function ban($id){
+		$q = $this->db->set('averified',0)->where('aid',$id)->update($this->table);
+		return $q;
 	}
 
 }

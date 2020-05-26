@@ -10,6 +10,8 @@
 			</div>
 		</div>
 	</header>
+	<?php echo successmsg();
+	echo errormsg();?>
 	<div class="container-fluid my-3">
 		<div class="row">
 			<div class="col-md-12">
@@ -49,9 +51,11 @@
 										  </button>
 										  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 										    <a class="dropdown-item" href="#">Edit</a>
-										    <a class="dropdown-item" href="#">Delete</a>
-										    <a class="dropdown-item" href="#">Verify</a>
-										    <a class="dropdown-item" href="#">Banned</a>
+										    <a class="dropdown-item" href="<?php echo base_url('Sadmin/Institutes/action/delete/').$row->aid; ?>">Delete</a>
+											  <?php if($row->averified==0){ ?>
+										    <a class="dropdown-item" href="<?php echo base_url('Sadmin/Institutes/action/verify/').$row->aid; ?>">Verify</a>
+										    <?php } ?>
+											  <a class="dropdown-item" href="<?php echo base_url('Sadmin/Institutes/action/ban/').$row->aid; ?>"">Banned</a>
 										  </div>
 										</div>
 									</td>

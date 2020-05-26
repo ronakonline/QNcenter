@@ -116,20 +116,28 @@
 											<td class="tbrr p30-15" style="padding: 60px 30px; border-radius:26px 26px 0px 0px;" bgcolor="#12325c">
 												<table width="100%" border="0" cellspacing="0" cellpadding="0">
 													<tr>
-														<td class="h1 pb25" style="color:#ffffff; font-family:Muli, Arial,sans-serif; font-size:32px; line-height:46px; text-align:center; padding-bottom:25px;">Welcome, <?php echo $_SESSION['iemail']; ?></td>
+														<td class="h1 pb25" style="color:#ffffff; font-family:Muli, Arial,sans-serif; font-size:32px; line-height:46px; text-align:center; padding-bottom:25px;">Welcome,<?php echo $name; ?></td>
 													</tr>
 													<tr>
-														<td class="text-center pb25" style="color:#c1cddc; font-family:Muli, Arial,sans-serif; font-size:16px; line-height:30px; text-align:center; padding-bottom:25px;">Thank you for Choosing QN-Center. We are happy to have you as our member<span class="m-hide"><br /></span>You can verify your account by clicking on Click here button below.</td>
+														<td class="text-center pb25" style="color:#c1cddc; font-family:Muli, Arial,sans-serif; font-size:16px; line-height:30px; text-align:center; padding-bottom:25px;">You have been registered by <?php echo $_SESSION['Institute']->name; ?> <span class="m-hide"><br /></span>Have Happy Learning.</td>
 													</tr>
 													<!-- Button -->
 													<tr>
 														<td align="center">
 															<table class="center" border="0" cellspacing="0" cellpadding="0" style="text-align:center;">
 																<tr>
-																	<td class="pink-button text-button" style="background:#ff6666; color:#c1cddc; font-family:Muli, Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold;"><a href="<?php echo base_url('User/verifyemail/').$_SESSION['iemail'].'/'.$_SESSION['verification_code']; ?>" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">CLICK HERE</span></a></td>
+																	<td class="text-center" style="color:#c1cddc; font-family:Muli, Arial,sans-serif; font-size:16px; line-height:30px; text-align:center; padding-bottom:25px;"><span>Your Login Details</span></td>
+
 																</tr>
 															</table>
 														</td>
+													</tr>
+													<tr>
+														<td class="text-center" style="color:#c1cddc; font-family:Muli, Arial,sans-serif; font-size:16px; line-height:30px; text-align:center; padding-bottom:25px;"><span>Email : <?php echo $email; ?></span></td>
+													</tr>
+													<tr>
+
+														<td class="text-center" style="color:#c1cddc; font-family:Muli, Arial,sans-serif; font-size:16px; line-height:30px; text-align:center; padding-bottom:25px;"><span>Password :  <?php echo $password; ?></span></td>
 													</tr>
 													<!-- END Button -->
 												</table>

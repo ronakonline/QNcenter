@@ -16,7 +16,13 @@ class ClassM extends CI_Model{
 		return $q->result();
 	}
 	function  all_class_by_department($did){
-		$q = $this->db->where('did',$did)->get('class');
+		$this->db->select('class.name as name,class.id as id,department.aid as aid');
+		$this->db->from('class');
+		$this->db->where('department.aid',$_SESSION['Institute']->aid);
+		$this->db->where('class.did',$did);
+		$this->db->join('department','class.did=department.did');
+		$q = $this->db->get();
+
 		return $q->result();
 	}
 }
