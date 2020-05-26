@@ -18,20 +18,25 @@
 						<table class="table table-bordered table-hover data-tables">
 							<thead>
 							<tr>
+								<th>Enrollment No</th>
 								<th>Full Name</th>
 								<th>Department</th>
 								<th>Class</th>
+								<th>Email</th>
 								<th>Action</th>
 							</tr>
 							</thead>
 							<tbody>
-								
+								<?php foreach($students as $row){?>
 								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
+									<td><?php echo $row->eno; ?></td>
+									<td><?php echo $row->name; ?></td>
+									<td><?php echo $row->dname; ?></td>
+									<td><?php echo $row->cname; ?></td>
+									<td><?php echo $row->email; ?></td>
 									<td></td>
 								</tr>
+							<?php } ?>
 								
 							</tbody>
 
