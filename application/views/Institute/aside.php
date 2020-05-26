@@ -71,6 +71,7 @@
 					</a>
 					<ul class="treeview-menu">
 						<li><a href="<?php echo base_url('Institute/Student/addstudent'); ?>"><i class="icon icon-plus-square"></i>Add Student</a></li>
+						<li><a href="<?php echo base_url('Institute/Student/import_excel'); ?>"><i class="icon icon-plus-square"></i>Import Excel</a></li>
 						<li><a href="<?php echo base_url('Institute/Student/allstudent'); ?>"><i class="icon icon-align-justify"></i>All Students</a></li>
 					</ul>
 				</li>
