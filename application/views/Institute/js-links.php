@@ -27,6 +27,11 @@
 					did : did
 			},
 			success:function (response) {
+					$("#class option").each(function () {
+						if( $(this).val() != 0 ){
+							$(this).remove();
+						}
+					});
 				$("#class").append(response)
 			}
 

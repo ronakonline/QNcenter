@@ -44,7 +44,7 @@
 											<div class="form-group">
 			                                    <label for="department">Class</label>
 			                                    <select class="form-control" id="class" name="cid" required>
-													<option disabled selected>Select Class</option>
+													<option disabled selected value="0">Select Class</option>
 
 			                                    </select>
 			                                </div>

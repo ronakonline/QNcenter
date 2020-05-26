@@ -30,7 +30,7 @@
 										<div class="col-sm-12">
                                             <div class="form-group form-float">
                                                 <div class="form-line">
-                                                    <input type="text" class="form-control" required>
+                                                    <input type="text" class="form-control" name="name" required>
                                                     <label class="form-label">Full Name</label>
                                                 </div>
                                             </div>
@@ -39,7 +39,7 @@
                                         <div class="col-sm-12">
                                             <div class="form-group form-float">
                                                 <div class="form-line">
-                                                    <input type="text" class="form-control" required>
+                                                    <input type="text" class="form-control" name="enrollment_no" required>
                                                     <label class="form-label">Enrollment No.</label>
                                                 </div>
                                             </div>
@@ -48,12 +48,12 @@
 										<div class="col-sm-12">
 											<div class="form-group">
 			                                    <label for="department">Department</label>
-			                                    <select class="form-control" id="department" required>
+			                                    <select class="form-control" id="department" name="department" required>
 			                                        <option disabled selected>Select Department</option>
-			                                        <option>2</option>
-			                                        <option>3</option>
-			                                        <option>4</option>
-			                                        <option>5</option>
+													<?php $departemnets = department_list();
+													foreach ($departemnets as $row){ ?>
+														<option value="<?php echo $row->did; ?>"><?php echo $row->name; ?></option>
+													<?php } ?>
 			                                    </select>
 			                                </div>
 			                            </div>
@@ -61,12 +61,8 @@
 		                                <div class="col-sm-12">
 											<div class="form-group">
 			                                    <label for="department">Class</label>
-			                                    <select class="form-control" id="class" required>
-			                                        <option disabled selected>Select Class</option>
-			                                        <option>2</option>
-			                                        <option>3</option>
-			                                        <option>4</option>
-			                                        <option>5</option>
+			                                    <select class="form-control" id="class" name="class" required>
+			                                        <option disabled selected value="0">Select Class</option>
 			                                    </select>
 			                                </div>
 			                            </div>
@@ -74,7 +70,7 @@
 			                            <div class="col-sm-12">
                                             <div class="form-group form-float">
                                                 <div class="form-line">
-                                                    <input type="email" class="form-control" required>
+                                                    <input type="email" class="form-control" name="email" required>
                                                     <label class="form-label">Email</label>
                                                 </div>
                                             </div>
@@ -83,7 +79,7 @@
                                         <div class="col-sm-12">
                                             <div class="form-group form-float">
                                                 <div class="form-line">
-                                                    <input type="password" class="form-control" required>
+                                                    <input type="password" class="form-control" name="password" required>
                                                     <label class="form-label">Password</label>
                                                 </div>
                                             </div>
