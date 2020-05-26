@@ -47,7 +47,14 @@
 						<i class="icon icon-building-o  s-18"></i> <span>Institutes</span>
 					</a>
 				</li>
-
+				<li class="treeview"><a href="#">
+						<i class="icon icon-web  s-18"></i> <span>Blog</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="<?php echo base_url('Sadmin/Blog/addblog'); ?>"><i class="icon icon-plus-square"></i>Add Blog</a></li>
+						<li><a href="<?php echo base_url('Sadmin/Blog/allblog'); ?>"><i class="icon icon-align-justify"></i>All Blogs</a></li>
+					</ul>
+				</li>
 			</ul>
 		</section>
 	</aside>

@@ -10,11 +10,12 @@ class User extends CI_Controller
 	}
 
 	public function index()
-	{
+	{	
+		$data['title'] = "Institute Login || QN-Center";
 		if (isset($_SESSION['institute'])) {
 			redirect(base_url('Institute'));
 		}
-		$this->load->view('Institute/login');
+		$this->load->view('Institute/login',$data);
 	}
 
 	public function logout()

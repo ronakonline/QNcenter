@@ -48,7 +48,6 @@
                             <p>Lorem ipsum dolor sit amet,  sapiente tenetur ut, veritatis.</p>
                         </div>
                             <a href="<?php echo base_url('Institute/register') ?>"><button class="btn btn-light s-14 pl-4 pr-4 text-primary">Create Account</button></a>
-
                         </div>
                     </div>
                     </div>
