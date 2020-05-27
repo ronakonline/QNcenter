@@ -41,157 +41,33 @@
         </div><!-- /.container -->                      
     </div><!-- /.page-title -->
 
-    <?php /* 
-    <!-- Fillter courses -->
-    <section class="flat-row pad-top50px pad-bottom0px">
-        <div class="container">
-            <div class="row">
-                <div class="search-course">
-                    <div class="col-md-10">
-                        <!-- Fillter courses -->
-                        <form class="flat-contact-form fillter-courses border-radius border-white text-center style1" id="contactform5" method="post" action="./contact/contact-process.php">
-                            <div class="field clearfix">      
-                                <div class="wrap-type-input">
-                                    <div class="wrap categories-courses">
-                                        <select class="select-field categories-courses" name="appointment_services">
-                                            <option value="" selected="selected">All Blog </option>
-                                            <option value="Categories 1">Courses 1</option>
-                                            <option value="Categories 2">Courses 2</option>
-                                            <option value="Categories 3">Courses 3</option>
-                                        </select> 
-                                    </div><!-- /.wrap-select -->
-                                    
-                                    <div class="wrap courses-keyword">
-                                        <input type="text" value="" placeholder="Course keyword" name="subject" id="subject" >
-                                    </div>
-
-                                    <div class="wrap all-categories">
-                                        <button>All categories</button>
-                                    </div>  
-                                </div><!-- /.wrap-type-input -->                            
-                            </div><!-- /.field -->                        
-                        </form><!-- /.comment-form -->  
-                    </div><!-- /.col-md-10 -->
-
-                    <div class="col-md-2">
-                        <div class="list-course">
-                            <a href="course.html"><i class="fa fa-th" aria-hidden="true"></i></a>
-                            <a href="course_list.html"><i class="fa fa-list" aria-hidden="true"></i></a>
-                        </div>
-                    </div><!-- /.colo-md-2 -->
-                </div><!-- /.search-course -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->        
-    </section>
-    */?>
     <!-- Flat courses -->
     <section class="flat-row pad-top50px pad-bottom90px">
         <div class="container">
             <div class="row">
+                <?php foreach ($categories as $category) { ?>
+                    
+                
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="flat-courses">
                         <div class="courses-thumbnail">
-                            <a href="course_single.html"><img src="images/course/cat1.jpg" alt="image"></a>
-                            <a class="courses-viewmore" href="course_single.html">View more</a>
+                            <a href="#"><img src="<?php echo base_url('assets/images/category/').$category->banner; ?>" alt="image"></a>
+                            <a class="courses-viewmore" href="#">View more</a>
                         </div>
                         <div class="courses-content">
-                            <a href="course_single.html"><h6 class="courses-topic">Business and Economics</h6></a>
+                            <a href="#"><h6 class="courses-topic"><?php echo $category->category ?></h6></a>
                             <p>Total Courese<span>( 34 )</span></p>
                         </div>
                     </div><!-- /.flat-courses -->
                 </div><!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="flat-courses">
-                        <div class="courses-thumbnail">
-                            <a href="course_single.html"><img src="images/course/cat2.jpg" alt="image"></a>
-                            <a class="courses-viewmore" href="course_single.html">View more</a>
-                        </div>
-                        <div class="courses-content">
-                            <a href="course_single.html"><h6 class="courses-topic">Language</h6></a>
-                            <p>Total Courese<span>( 34 )</span></p>
-                        </div>
-                    </div><!-- /.flat-courses -->
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="flat-courses">
-                        <div class="courses-thumbnail">
-                            <a href="course_single.html"><img src="images/course/cat3.jpg" alt="image"></a>
-                            <a class="courses-viewmore" href="course_single.html">View more</a>
-                        </div>
-                        <div class="courses-content">
-                            <a href="course_single.html"><h6 class="courses-topic">Arts</h6></a>
-                            <p>Total Courese<span>( 34 )</span></p>
-                        </div>
-                    </div><!-- /.flat-courses -->
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="flat-courses">
-                        <div class="courses-thumbnail">
-                            <a href="course_single.html"><img src="images/course/cat4.jpg" alt="image"></a>
-                            <a class="courses-viewmore" href="course_single.html">View more</a>
-                        </div>
-                        <div class="courses-content">
-                            <a href="course_single.html"><h6 class="courses-topic">Fashion</h6></a>
-                            <p>Total Courese<span>( 34 )</span></p>
-                        </div>
-                    </div><!-- /.flat-courses -->
-                </div><!-- /.col-md-3 -->
+                <?php } ?>
             </div><!-- /.row -->
 
             <div class="row">
                 <div class="flat-divider d40px"></div>
             </div>
 
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="flat-courses">
-                        <div class="courses-thumbnail">
-                            <a href="course_single.html"><img src="images/course/cat5.jpg" alt="image"></a>
-                            <a class="courses-viewmore" href="course_single.html">View more</a>
-                        </div>
-                        <div class="courses-content">
-                            <a href="course_single.html"><h6 class="courses-topic">Health Studies</h6></a>
-                            <p>Total Courese<span>( 34 )</span></p>
-                        </div>
-                    </div><!-- /.flat-courses -->
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="flat-courses">
-                        <div class="courses-thumbnail">
-                            <a href="course_single.html"><img src="images/course/cat6.jpg" alt="image"></a>
-                            <a class="courses-viewmore" href="course_single.html">View more</a>
-                        </div>
-                        <div class="courses-content">
-                            <a href="course_single.html"><h6 class="courses-topic">Food and Beverage Studies</h6></a>
-                            <p>Total Courese<span>( 34 )</span></p>
-                        </div>
-                    </div><!-- /.flat-courses -->
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="flat-courses">
-                        <div class="courses-thumbnail">
-                            <a href="course_single.html"><img src="images/course/cat7.jpg" alt="image"></a>
-                            <a class="courses-viewmore" href="course_single.html">View more</a>
-                        </div>
-                        <div class="courses-content">
-                            <a href="course_single.html"><h6 class="courses-topic">Engineering & Technology</h6></a>
-                            <p>Total Courese<span>( 34 )</span></p>
-                        </div>
-                    </div><!-- /.flat-courses -->
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="flat-courses">
-                        <div class="courses-thumbnail">
-                            <a href="course_single.html"><img src="images/course/cat8.jpg" alt="image"></a>
-                            <a class="courses-viewmore" href="course_single.html">View more</a>
-                        </div>
-                        <div class="courses-content">
-                            <a href="course_single.html"><h6 class="courses-topic">Humanities and Social Sciences</h6></a>
-                            <p>Total Courese<span>( 34 )</span></p>
-                        </div>
-                    </div><!-- /.flat-courses -->
-                </div><!-- /.col-md-3 -->
-            </div><!-- /.row -->
+            
         </div><!-- /.container -->
     </section><!-- /.flat-row -->
    
