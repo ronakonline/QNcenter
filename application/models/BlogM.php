@@ -29,4 +29,9 @@ class BlogM extends  CI_Model{
 		$q = $this->db->query('SELECT blog.`id`, blog.`title`, blog.`banner`, blog.`blog`, institute.`name`, category.category, blog.`created` FROM `blog`,institute,category WHERE blog.author=institute.aid AND blog.category=category.id AND blog.category ='.$id);
 		return $q->result();
 	}
+
+	public function blog_detail($id){
+		$q = $this->db->query('SELECT blog.id, blog.title, blog.banner, blog.blog, institute.name, category.category, blog.created from blog left JOIN institute ON institute.aid = blog.author, category where category.id=blog.category and blog.id='.$id);
+		return $q->result();
+	}
 }
