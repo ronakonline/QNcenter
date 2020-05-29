@@ -21,6 +21,7 @@ class Blog extends CI_Controller {
 	public function single_blog($id){
 		$data['title'] = "Blog || QN-Center";    
 		$this->load->model('BlogM');
+		$data['categories'] = $this->BlogM->categories();
         $data['blogdetail'] = $this->BlogM->blog_detail($id);
 
 		$this->load->view('blog_single',$data);

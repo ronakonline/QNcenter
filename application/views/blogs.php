@@ -20,20 +20,7 @@
        <?php $this->load->view('header'); ?>
     </header><!-- /.header -->
             
-    <!-- Page title -->
-    <div class="page-title parallax parallax1">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">                    
-                    <div class="page-title-heading">
-                        <h1 class="title">Welcome To Our Blog</h1>
-                    </div><!-- /.page-title-captions --> 
-                    
-                </div><!-- /.col-md-12 -->  
-            </div><!-- /.row -->  
-        </div><!-- /.container -->                      
-    </div><!-- /.page-title --> 
+    
 
     <!-- Blog posts -->
     <section class="main-content blog">
@@ -42,14 +29,15 @@
                 <div class="col-md-12">
                     <div class="post-wrap">
                         <article class="entry clearfix images-left">                       
-                            <div class="feature-post">
-                                <a href="blog_single.html"><img src="<?php echo base_url('assets/images/blog/').$bloglist[0]->banner; ?>" alt="image" style="width: 600px;height: 365px;"></a>
-                            </div><!-- /.feature-post -->
                             <?php foreach ($bloglist as $blog) { ?>
+                            <div class="feature-post">
+                                <a href="<?php echo base_url('Blog/single_blog/').$blog->id; ?>"><img src="<?php echo base_url('assets/images/blog/').$bloglist[0]->banner; ?>" alt="image" style="width: 600px;height: 365px;"></a>
+                            </div><!-- /.feature-post -->
+                            
                                 
                             
                             <div class="main-post">
-                                <h2 class="title-post"><a href="blog_single.html"><?php echo $blog->title; ?></a></h2>
+                                <h2 class="title-post"><a href="<?php echo base_url('Blog/single_blog/').$blog->id; ?>"><?php echo $blog->title; ?></a></h2>
                                 <div class="meta-post clearfix">
                                     <ul>    
                                         <li class="post-author">
@@ -69,7 +57,7 @@
                                     </ul>
                                 </div><!-- /.meta-post -->                                   
                                 <div class="entry-post">
-                                    <p><?php echo substr(strip_tags($blog->blog),0,395); ?><a class="read-more" href="#">Read more</a>
+                                    <p><?php echo substr(strip_tags($blog->blog),0,395); ?><a class="read-more" href="<?php echo base_url('Blog/single_blog/').$blog->id; ?>">Read more</a>
                                     </p>                                    
                                 </div><!-- /.entry-post -->
                             </div><!-- /.main-post --> 
