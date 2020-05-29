@@ -45,22 +45,26 @@
     <section class="flat-row pad-top50px pad-bottom90px">
         <div class="container">
             <div class="row">
+                <?php $i=0; ?>
                 <?php foreach ($categories as $category) { ?>
                     
                 
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="flat-courses">
                         <div class="courses-thumbnail">
-                            <a href="#"><img src="<?php echo base_url('assets/images/category/').$category->banner; ?>" alt="image"></a>
-                            <a class="courses-viewmore" href="#">View more</a>
+                            <a href="<?php echo base_url('Blog/BlogList/').$category->id; ?>"><img src="<?php echo base_url('assets/images/category/').$category->banner; ?>" alt="image"></a>
+                            <a class="courses-viewmore" href="<?php echo base_url('Blog/BlogList/').$category->id; ?>">View more</a>
                         </div>
                         <div class="courses-content">
-                            <a href="#"><h6 class="courses-topic"><?php echo $category->category ?></h6></a>
+                            <a href="<?php echo base_url('Blog/BlogList/').$category->id; ?>"><h6 class="courses-topic"><?php echo $category->category ?></h6></a>
                             <p>Total Courese<span>( 34 )</span></p>
                         </div>
                     </div><!-- /.flat-courses -->
                 </div><!-- /.col-md-3 -->
-                <?php } ?>
+                <?php $i++;
+                if ($i==8) {
+                    break;
+                } } ?>
             </div><!-- /.row -->
 
             <div class="row">
