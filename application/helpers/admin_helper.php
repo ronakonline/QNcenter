@@ -43,6 +43,18 @@ if(!function_exists('check_login_status')){
 	}
 }
 
+if(!function_exists('check_faculty_login_status')){
+	function check_faculty_login_status(){
+		if(isset($_SESSION['Faculty'])){
+			$ci = get_instance();
+			$ci->load->model('Faculty/UserM');
+			return;
+		}else{
+			redirect('Faculty/login');
+		}
+	}
+}
+
 if(!function_exists('department_list')){
 	function department_list(){
 		$ci = get_instance();

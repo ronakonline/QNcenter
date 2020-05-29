@@ -16,7 +16,7 @@
 											 alt="">
 									</div>
 
-									<form class="form-material" action="<?php echo base_url('Institute/User/login'); ?>"
+									<form class="form-material" action="<?php echo base_url('Faculty/User/login'); ?>"
 										  method="post">
 										<!-- Input -->
 										<div class="body">
@@ -37,27 +37,13 @@
 											<input type="submit" class="btn btn-primary btn-sm pl-4 pr-4"
 												   value="Log In">
 
-											<div class="pt-3 pb-3">
-												<div class="row">
-													<div class="col">
-														<a href="<?php echo base_url('Faculty/login'); ?>" class="grey-text"><i class="icon-sign-in"></i> Login
-															as Faculty</a>
-													</div>
-
-												</div>
-
-											</div>
-
-											<div class="pt-0 pb-0">
+											<div class="pt-5 pb-5">
 												<div class="row">
 														<div class="col">
 															<a href="#" class="grey-text"><i class="icon-add"></i> Forgot Password?</a>
 														</div>
 												</div>
-
 											</div>
-
-
 
 										</div>
 										<!-- #END# Input -->

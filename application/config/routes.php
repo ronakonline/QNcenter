@@ -63,3 +63,7 @@ $route['Institute/verify'] = 'Institute/Dashboard/verify';
 //Super Admin Routes
 $route['(?i)Sadmin']='Sadmin/Dashboard';
 $route['(?i)Sadmin/(?i)login'] = 'Sadmin/User';
+
+//Faculty Routes
+$route['(?i)Faculty'] = 'Faculty/Dashboard';
+$route['(?i)Faculty/login'] = 'Faculty/User';

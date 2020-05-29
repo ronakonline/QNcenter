@@ -17,7 +17,7 @@
 								 alt="User Image">
 						</div>
 						<div class="float-left info">
-							<h6 class="font-weight-light mt-2 mb-1"><?php echo $_SESSION['Institute']->username;  ?></h6>
+							<h6 class="font-weight-light mt-2 mb-1"><?php echo $_SESSION['Faculty']->name;  ?></h6>
 								<a href="#"><i class="icon-circle text-green blink"></i> Online</a>
 						</div>
 					</div>
@@ -41,22 +41,6 @@
 				<li class=""><a href="<?php echo base_url('Institute'); ?>">
 						<i class="icon icon-dashboard2  s-18"></i> <span>Dashboard</span>
 					</a>
-				</li>
-				<li class="treeview"><a href="#">
-						<i class="icon icon-building-o  s-18"></i> <span>Department</span>
-					</a>
-					<ul class="treeview-menu">
-						<li><a href="<?php echo base_url('Institute/Department/adddepartment'); ?>"><i class="icon icon-plus-square"></i>Add Department</a></li>
-						<li><a href="<?php echo base_url('Institute/Department/alldepartment'); ?>"><i class="icon icon-align-justify"></i>All Department</a></li>
-					</ul>
-				</li>
-				<li class="treeview"><a href="#">
-						<i class="icon icon-presentation-12  s-18"></i> <span>Class</span>
-					</a>
-					<ul class="treeview-menu">
-						<li><a href="<?php echo base_url('Institute/Classes/addclass'); ?>"><i class="icon icon-plus-square"></i>Add Class</a></li>
-						<li><a href="<?php echo base_url('Institute/Classes/allclass'); ?>"><i class="icon icon-align-justify"></i>All Class</a></li>
-					</ul>
 				</li>
 				<li class="treeview"><a href="#">
 						<i class="icon icon-envelope  s-18"></i> <span>Post</span>
