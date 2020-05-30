@@ -13,4 +13,9 @@ class UserM extends CI_Model{
 			return false;
 		}
 	}
+
+	public  function subscribed_institutes(){
+		$q = $this->db->where('aid',$_SESSION['User']->aid)->get('institute');
+		return $q->result();
+	}
 }

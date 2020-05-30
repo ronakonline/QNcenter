@@ -43,36 +43,20 @@
     <section class="main-content blog-fullwidth">
         <div class="wrap-blog-fullwidth">
             <div class="flat-grid margin20px clearfix">
+				<?php foreach ($institutes as $row){  ?>
                 <div class="flat-one-four">
                     <article class="entry">
-                        <div class="feature-post">
-                            <a href="blog_single_v2.html"><img src="images/blog/b2-1.jpg" alt="image"></a>
+                        <div class="feature-post" style="display: block; text-align: center;">
+                            <a href="blog_single_v2.html"><img src="<?php echo base_url('uploads/').$row->profile; ?>" alt="image" style="height: 150px; margin-top: 15px;" ></a>
                         </div><!-- /.feature-post -->
-                        <p class="entry-title"><a href="blog_single_v2.html">Never stop learning with conference live streams and videos.</a></p>
+                        <p class="entry-title"><a href="blog_single_v2.html"><?php echo $row->name; ?></a></p>
                     </article><!-- /.entry -->
-                </div><!-- /.flat-one-four -->              
-            </div><!-- /.flat-grid margin20px -->                        
+                </div><!-- /.flat-one-four -->
+				<?php } ?>
+
+            </div><!-- /.flat-grid margin20px -->
         </div><!-- /.wrap-blog-fullwidth -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="blog-pagination">
-                        <ul class="flat-pagination clearfix">
-                            <li class="prev">
-                                <a href="#"><i class="fa fa-angle-left"></i></a>
-                            </li>
-                            <li class="active">1</li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>                                  
-                            <li class="next">
-                                <a href="#"><i class="fa fa-angle-right"></i></a>
-                            </li>                               
-                        </ul><!-- /.flat-pagination -->
-                    </div><!-- /.blog-pagination -->
-                </div><!-- /.col-md-12 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
+        
     </section>
    
     <!-- Footer -->
