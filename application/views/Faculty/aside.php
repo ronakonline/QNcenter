@@ -31,14 +31,14 @@
 									class="mr-2 icon-cogs text-yellow"></i>Settings</a>
 							<a href="#" class="list-group-item list-group-item-action"><i
 									class="mr-2 icon-security text-purple"></i>Change Password</a>
-							<a href="<?php echo base_url('Institute/User/logout'); ?>" class="list-group-item list-group-item-action"><i
+							<a href="<?php echo base_url('Faculty/User/logout'); ?>" class="list-group-item list-group-item-action"><i
 									class="mr-2 icon-sign-out text-blue"></i>Logout</a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<ul class="sidebar-menu">
-				<li class=""><a href="<?php echo base_url('Institute'); ?>">
+				<li class=""><a href="<?php echo base_url('Faculty'); ?>">
 						<i class="icon icon-dashboard2  s-18"></i> <span>Dashboard</span>
 					</a>
 				</li>
@@ -46,33 +46,17 @@
 						<i class="icon icon-envelope  s-18"></i> <span>Post</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="<?php echo base_url('Institute/Post/addpost'); ?>"><i class="icon icon-plus-square"></i>Add Post</a></li>
-						<li><a href="<?php echo base_url('Institute/Post/allpost'); ?>"><i class="icon icon-align-justify"></i>All Posts</a></li>
+						<li><a href="<?php echo base_url('Faculty/Post/addpost'); ?>"><i class="icon icon-plus-square"></i>Add Post</a></li>
+						<li><a href="<?php echo base_url('Faculty/Post/allpost'); ?>"><i class="icon icon-align-justify"></i>All Posts</a></li>
 					</ul>
 				</li>
 				<li class="treeview"><a href="#">
 						<i class="icon icon-graduation-cap  s-18"></i><span>Student</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="<?php echo base_url('Institute/Student/addstudent'); ?>"><i class="icon icon-plus-square"></i>Add Student</a></li>
-						<li><a href="<?php echo base_url('Institute/Student/import_excel'); ?>"><i class="icon icon-plus-square"></i>Import Excel</a></li>
-						<li><a href="<?php echo base_url('Institute/Student/allstudent'); ?>"><i class="icon icon-align-justify"></i>All Students</a></li>
-					</ul>
-				</li>
-				<li class="treeview"><a href="#">
-						<i class="icon icon-user  s-18"></i> <span>Faculty</span>
-					</a>
-					<ul class="treeview-menu">
-						<li><a href="<?php echo base_url('Institute/Faculty/addfaculty'); ?>"><i class="icon icon-plus-square"></i>Add Faculty</a></li>
-						<li><a href="<?php echo base_url('Institute/Faculty/allfaculty'); ?>"><i class="icon icon-align-justify"></i>All Faculty</a></li>
-					</ul>
-				</li>
-				<li class="treeview"><a href="#">
-						<i class="icon icon-web  s-18"></i> <span>Blog</span>
-					</a>
-					<ul class="treeview-menu">
-						<li><a href="<?php echo base_url('Institute/Blog/addblog'); ?>"><i class="icon icon-plus-square"></i>Add Blog</a></li>
-						<li><a href="<?php echo base_url('Institute/Blog/allblog'); ?>"><i class="icon icon-align-justify"></i>All Blogs</a></li>
+						<li><a href="<?php echo base_url('Faculty/Student/addstudent'); ?>"><i class="icon icon-plus-square"></i>Add Student</a></li>
+						<li><a href="<?php echo base_url('Faculty/Student/import_excel'); ?>"><i class="icon icon-plus-square"></i>Import Excel</a></li>
+						<li><a href="<?php echo base_url('Faculty/Student/allstudent'); ?>"><i class="icon icon-align-justify"></i>All Students</a></li>
 					</ul>
 				</li>
 			</ul>
