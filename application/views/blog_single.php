@@ -61,7 +61,7 @@
                                     <p>descripsion</p>
                                 </div>      
                                 <div class="entry-post">
-                                    <p><?php echo $blogdetail[0]->blog; ?></p>
+                                    <p style="overflow-wrap: break-word;"><?php echo $blogdetail[0]->blog; ?></p>
                                 </div><!-- /.entry-post -->
                                 <ul class="flat-socials">
                                     <li>

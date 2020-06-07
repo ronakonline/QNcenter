@@ -15,7 +15,11 @@ class PostM extends CI_Model{
 	}
 
 	function all(){
-		$q = $this->db->where('aid',$_SESSION['Institute']->aid)->get($this->table);
-		return $q->result();
+		$q = $this->db->query('SELECT notice.* , institute.name, department.name as dname, class.name as cname from notice, institute, department, class WHERE notice.aid=institute.aid AND notice.did=department.did AND class.id=notice.cid AND notice.aid='.$_SESSION['Institute']->aid);
+		
+        return $q->result();
+
+		// $q = $this->db->where('aid',$_SESSION['Institute']->aid)->get($this->table);
+		// return $q->result();
 	}
 }

@@ -57,7 +57,7 @@
                                     </ul>
                                 </div><!-- /.meta-post -->                                   
                                 <div class="entry-post">
-                                    <p><?php echo substr(strip_tags($blog->blog),0,395); ?><a class="read-more" href="<?php echo base_url('Blog/single_blog/').$blog->id; ?>">Read more</a>
+                                    <p style="overflow-wrap: break-word;"><?php echo substr(strip_tags($blog->blog),0,395); ?><a class="read-more" href="<?php echo base_url('Blog/single_blog/').$blog->id; ?>">Read more</a>
                                     </p>                                    
                                 </div><!-- /.entry-post -->
                             </div><!-- /.main-post --> 

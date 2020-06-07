@@ -33,8 +33,8 @@
 									<?php }else{ ?>
 										<td><?php echo $row->uid; ?></td>
 									<?php } ?>
-									<td><?php echo $row->did; ?></td>
-									<td><?php echo $row->cid; ?></td>
+									<td><?php echo $row->dname; ?></td>
+									<td><?php echo $row->cname; ?></td>
 									<td><?php echo $row->title; ?></td>
 									<td></td>
 								</tr>

@@ -16,7 +16,7 @@ class BlogM extends  CI_Model{
 	}
 
 	public function insert($data,$picture){
-		$q = $this->db->query('insert into '.$this->table.' values(null,"'.addslashes($data['title']).'","'.$picture.'","'.$data['blog'].'",'.$data['aid'].','.$data['category'].',now(),0)');
+		$q = $this->db->query('insert into '.$this->table.' values(null,"'.addslashes($data['title']).'","'.$picture.'","'.addslashes($data['blog']).'",'.$data['aid'].','.$data['category'].',now(),0)');
 		return $q;
 	}
 }
