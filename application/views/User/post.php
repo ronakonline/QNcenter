@@ -4,6 +4,12 @@
 <head>
     <title><?php echo "$title"; ?></title>
     <?php $this->load->view('headerlinks'); ?>
+
+    <style type="text/css">
+        .main-content{
+            padding-top: 0px;
+        }
+    </style>
 </head>                                
 <body class="header-sticky">   
     <div class="loader">
@@ -40,6 +46,7 @@
     </div><!-- /.page-title --> 
 
     <!-- Blog single -->
+    
     <?php foreach ($post as $value) { ?> 
     <section class="main-content blog-single">        
         <div class="post-wrap">
@@ -55,9 +62,10 @@
                                         <div class="meta-post clearfix">
                                             <ul>    
                                                 <li class="post-author">
-                                                    <span><a href="#">By Your</a></span>
+                                                    <span><a href="#">By&nbsp;&nbsp;<?php echo $value->institute; ?></a></span>
                                                 </li>                                        
-                                                <li class="post-date">November 18th, 2015</li>
+                                                <li class="post-date"><?php echo date('d-M-Y',strtotime($value->created_at)); ?></li>
+
                                                 <li class="post-categories">
                                                     <a href="#">Graphic</a>,
                                                     <a href="#">Website</a>
@@ -68,7 +76,8 @@
                                             <p>descripsion</p>
                                         </div>      
                                         <div class="entry-post">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare dignissim felis nec malesuada. Nunc fringilla est nec nisi accumsan porta. Praesent non aliquam augue, sed aliquet elit. Nam pretium eu est sed tincidunt. Donec ullamcorper odio vitae felis tempor suscipit tincidunt nec orci. Duis vulputate, nunc id vestibulum imperdiet, dui neque mattis erat, maximus ornare nisi nisi tempor ante.</p>
+                                            <?php echo $value->post ?>
+                                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare dignissim felis nec malesuada. Nunc fringilla est nec nisi accumsan porta. Praesent non aliquam augue, sed aliquet elit. Nam pretium eu est sed tincidunt. Donec ullamcorper odio vitae felis tempor suscipit tincidunt nec orci. Duis vulputate, nunc id vestibulum imperdiet, dui neque mattis erat, maximus ornare nisi nisi tempor ante.</p>
                                             <p>Cras feugiat sodales arcu. Sed id luctus purus. Aenean tristique risus id sem sollicitudin elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Mauris viverra quis velit ac lobortis. Donec fringilla rhoncus magna. Maecenas elit lorem, tincidunt non gravida sed, consectetur sed nunc. Suspendisse pretium elit ac viverra faucibus.</p>
 
                                             <ul>
@@ -77,7 +86,7 @@
                                                 <li>Vivamus elementum vehicula sapien vitae tincidunt.</li>
                                                 <li>Fusce a felis sed leo porttitor cursus</li>
                                             </ul>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare dignissim felis nec malesuada. Nunc fringilla est nec nisi accumsan porta. Praesent non aliquam augue, sed aliquet elit. Nam pretium eu est sed tincidunt. Donec ullamcorper odio vitae felis tempor suscipit tincidunt nec orci. Duis vulputate, nunc id vestibulum imperdiet, dui neque mattis erat, maximus ornare nisi nisi tempor ante.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare dignissim felis nec malesuada. Nunc fringilla est nec nisi accumsan porta. Praesent non aliquam augue, sed aliquet elit. Nam pretium eu est sed tincidunt. Donec ullamcorper odio vitae felis tempor suscipit tincidunt nec orci. Duis vulputate, nunc id vestibulum imperdiet, dui neque mattis erat, maximus ornare nisi nisi tempor ante.</p> -->
                                         </div><!-- /.entry-post -->
                                         <ul class="flat-socials">
                                             <li>
@@ -103,6 +112,7 @@
         </div><!-- /.post-wrap -->            
     </section>
     <?php } ?>
+    
     <!-- Footer -->
     <footer class="footer">
        <?php $this->load->view('footer'); ?>

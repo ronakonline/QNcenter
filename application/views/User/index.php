@@ -47,13 +47,13 @@
                 <div class="flat-one-four">
                     <article class="entry">
                         <div class="feature-post" style="display: block; text-align: center;">
-                            <a href="blog_single_v2.html"><img src="<?php if($row->profile==''){
+                            <a href="<?php echo base_url('User/Post/').$row->aid; ?>"><img src="<?php if($row->profile==''){
                               echo base_url('uploads/').'thumbnail.png';  
                             }else{
                               echo base_url('uploads/').$row->profile;  
                             }?>" alt="image" style="width: 250px;height: 200px; margin-top: 15px;" ></a>
                         </div><!-- /.feature-post -->
-                        <p class="entry-title"><a href="blog_single_v2.html"><?php echo $row->name; ?></a></p>
+                        <p class="entry-title"><a href="<?php echo base_url('User/Post/').$row->aid; ?>"><?php echo $row->name; ?></a></p>
                     </article><!-- /.entry -->
                 </div><!-- /.flat-one-four -->
 				<?php } ?>
