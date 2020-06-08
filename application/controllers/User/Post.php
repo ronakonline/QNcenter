@@ -20,6 +20,10 @@ class Post extends CI_Controller {
         check_userlogin_status();
         $data['title']='Single Post || QN-Center';
         $data['post'] = $this->PostM->post($id);
+        //echo $data['post'][0]->nid;
+        $data['views'] = $this->PostM->view($id);
+       // echo $data['views'];
+		$data['comments'] = $this->PostM->comments($id);
         $this->load->view('User/post',$data);
     }
 	

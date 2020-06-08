@@ -24,6 +24,20 @@ class PostM extends CI_Model{
         $this->db->join('institute','notice.aid=institute.aid');
         // $this->db->order_by("created_at", "desc");
         $q = $this->db->get();
+
         return $q->result();
+	}
+
+	public function view($id){
+		$q = $this->db->where('post_id',$id)->where('user_id',$_SESSION['User']->uid)->get('post_views');
+		if($q->num_rows() == 0){
+			$op =  $this->db->query('insert into post_views values(null,'.$id.','.$_SESSION['User']->uid.')');
+			$this->db->query('update notice set views = views+1 where nid='.$id);
+			return $op;
+		}
+	}
+
+	public function  comments($id){
+		return $this->db->where('post_id',$id)->get('post_comments')->result();
 	}
 }

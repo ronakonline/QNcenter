@@ -65,7 +65,7 @@
                                           </div>
                                           <div class="panel-footer" style="padding-bottom: 30px;">
                                               <p class="text-left pull-left" style=""><?php echo date('d-M-Y',strtotime($value->created_at)); ?></p>
-                                              <p class="text-right pull-right" style=""><?php echo "0 Views"; ?></p>
+                                              <p class="text-right pull-right" style=""><?php echo "$value->views Views"; ?></p>
                                           </div>
                                         </div>
                                     </div>
