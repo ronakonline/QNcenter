@@ -67,3 +67,7 @@ $route['(?i)Sadmin/(?i)login'] = 'Sadmin/User';
 //Faculty Routes
 $route['(?i)Faculty'] = 'Faculty/Dashboard';
 $route['(?i)Faculty/login'] = 'Faculty/User';
+
+
+//User Routes
+$route['User/Post/(:any)'] = 'User/Post/index/$1';

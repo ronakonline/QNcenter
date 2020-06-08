@@ -5,11 +5,7 @@
     <title><?php echo "$title"; ?></title>
     <?php $this->load->view('headerlinks'); ?>
 
-    <style type="text/css">
-        .main-content{
-            padding-top: 0px;
-        }
-    </style>
+   
 </head>                                
 <body class="header-sticky">   
     <div class="loader">
@@ -47,7 +43,7 @@
 
     <!-- Blog single -->
     
-    <?php foreach ($post as $value) { ?> 
+     
     <section class="main-content blog-single">        
         <div class="post-wrap">
             <div class="container">
@@ -58,14 +54,13 @@
                             <div class="main-post">
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-2">
-                                        <h2 class="title-post"><a href="#"><?php echo $value->title; ?></a></h2>
+                                        <h2 class="title-post"><a href="#"><strong><?php echo $post[0]->title; ?></strong></a></h2>
                                         <div class="meta-post clearfix">
                                             <ul>    
                                                 <li class="post-author">
-                                                    <span><a href="#">By&nbsp;&nbsp;<?php echo $value->institute; ?></a></span>
+                                                    <span><a href="#">By&nbsp;&nbsp;<?php echo $post[0]->institute; ?></a></span>
                                                 </li>                                        
-                                                <li class="post-date"><?php echo date('d-M-Y',strtotime($value->created_at)); ?></li>
-
+                                                <li class="post-date"><?php echo date('d-M-Y',strtotime($post[0]->created_at)); ?></li>
                                                 <li class="post-categories">
                                                     <a href="#">Graphic</a>,
                                                     <a href="#">Website</a>
@@ -73,45 +68,91 @@
                                             </ul>
                                         </div><!-- /.meta-post -->
                                         <div class="desc">
-                                            <p>descripsion</p>
+                                            <p>Descripsion</p>
                                         </div>      
                                         <div class="entry-post">
-                                            <?php echo $value->post ?>
-                                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare dignissim felis nec malesuada. Nunc fringilla est nec nisi accumsan porta. Praesent non aliquam augue, sed aliquet elit. Nam pretium eu est sed tincidunt. Donec ullamcorper odio vitae felis tempor suscipit tincidunt nec orci. Duis vulputate, nunc id vestibulum imperdiet, dui neque mattis erat, maximus ornare nisi nisi tempor ante.</p>
-                                            <p>Cras feugiat sodales arcu. Sed id luctus purus. Aenean tristique risus id sem sollicitudin elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Mauris viverra quis velit ac lobortis. Donec fringilla rhoncus magna. Maecenas elit lorem, tincidunt non gravida sed, consectetur sed nunc. Suspendisse pretium elit ac viverra faucibus.</p>
-
-                                            <ul>
-                                                <li>Pellentesque placerat, ex ac tempor convallis</li>
-                                                <li>Orci arcu vulputate sapien, vel pulvinar risus enim at libero. </li>
-                                                <li>Vivamus elementum vehicula sapien vitae tincidunt.</li>
-                                                <li>Fusce a felis sed leo porttitor cursus</li>
-                                            </ul>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare dignissim felis nec malesuada. Nunc fringilla est nec nisi accumsan porta. Praesent non aliquam augue, sed aliquet elit. Nam pretium eu est sed tincidunt. Donec ullamcorper odio vitae felis tempor suscipit tincidunt nec orci. Duis vulputate, nunc id vestibulum imperdiet, dui neque mattis erat, maximus ornare nisi nisi tempor ante.</p> -->
+                                            <?php echo $post[0]->post; ?>
                                         </div><!-- /.entry-post -->
-                                        <ul class="flat-socials">
-                                            <li>
-                                                <a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" title="linkedin"><i class="fa fa-linkedin"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" title="google-plus"><i class="fa fa-youtube-play"></i></a>
-                                            </li>                                            
-                                        </ul>
+                                        
                                     </div><!-- /.col-md-8 -->
                                 </div><!-- /.row -->
+                                
                             </div><!-- /.main-post -->
                         </article><!-- /.entry -->
                     </div><!-- /.col-md-12 -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
+            <div class="section-comment">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <center><h2><strong>Comments</strong></h2></center>
+
+                            <div class="comment-post">
+                                <div class="comment-list-wrap">   
+                                    <ul class="comment-list">
+                                        <li>
+                                            <article class="comment">
+                                                <h4 class="title comment-author">Michael windzor</h4>
+                                                <div class="comment-avatar">
+                                                    <img src="images/blog/comment-avatar.jpg" alt="image">
+                                                </div>                  
+                                                <div class="comment-detail">
+                                                    <div class="comment-meta">
+                                                        <span class="comment-date"><a href="">3 days ago</a></span> 
+                                                        <p>Great Guide to get the job</p>
+                                                    </div>
+                                                    <p class="comment-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at eros vitae libero posuere efficitur et vel erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</p>
+                                                </div><!-- /.comment-detail -->
+                                            </article><!-- /.comment -->
+                                        </li>
+
+                                        <li>
+                                            <article class="comment">
+                                                <h4 class="title comment-author">Michael windzor</h4>
+                                                <div class="comment-avatar">
+                                                    <img src="images/blog/comment-avatar.jpg" alt="image">
+                                                </div>                  
+                                                <div class="comment-detail">
+                                                    <div class="comment-meta">
+                                                        <span class="comment-date"><a href="">3 days ago</a></span> 
+                                                    </div>
+                                                    <p class="comment-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at eros vitae libero posuere efficitur et vel erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</p>
+                                                </div><!-- /.comment-detail -->
+                                            </article><!-- /.comment -->
+                                        </li>
+                                    </ul><!-- /.comment-list -->
+                                </div><!-- /.comment-list-wrap -->
+
+                                <div id="respond" class="comment-respond">
+                                    <h4 class="title comment-title">Add a review</h4>
+                                    <form class="flat-contact-form" id="contactform5" method="post" action="./contact/contact-process.php">
+                                        <div class="field clearfix">      
+                                            <div class="wrap-type-input">                    
+                                                <div class="input-wrap name">
+                                                    <input type="text" value="" tabindex="1" placeholder="Name" name="name" id="name" required>
+                                                </div>
+                                                <div class="input-wrap email">
+                                                    <input type="email" value="" tabindex="2" placeholder="Email" name="email" id="email-contact" required>
+                                                </div> 
+                                            </div>
+                                            <div class="textarea-wrap">
+                                                <textarea class="type-input" tabindex="3" placeholder="Your Review" name="message" id="message-contact" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="submit-wrap">
+                                            <button>Submit</button>
+                                        </div>
+                                    </form><!-- /.comment-form -->
+                                </div><!-- /#respond -->
+                            </div><!-- /.comment-post -->
+                        </div><!-- /.col-md-8 -->
+                    </div><!-- /.row -->                                               
+                </div><!-- /.container -->
+            </div><!-- /.section-comment -->
         </div><!-- /.post-wrap -->            
     </section>
-    <?php } ?>
+    
     
     <!-- Footer -->
     <footer class="footer">

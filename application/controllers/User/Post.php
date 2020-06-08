@@ -9,11 +9,18 @@ class Post extends CI_Controller {
         $this->load->model('User/PostM');
     }
 
-	public function index(){
+	public function index($id){
 		check_userlogin_status();
-    	$data['title']='Post || QN-Center';
-    	$data['post'] = $this->PostM->posts();
-        $this->load->view('User/post',$data);
+        $data['title']='Posts || QN-Center';
+        $data['post'] = $this->PostM->posts($id);
+        $this->load->view('User/posts',$data);
 	}
+
+    public function single_post($id){
+        check_userlogin_status();
+        $data['title']='Single Post || QN-Center';
+        $data['post'] = $this->PostM->post($id);
+        $this->load->view('User/post',$data);
+    }
 	
 }
