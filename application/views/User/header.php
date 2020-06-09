@@ -16,7 +16,7 @@
                             
                             <nav id="mainnav" class="mainnav">
                                 <ul class="menu"> 
-                                    <li class="home"><a href="<?php echo base_url(); ?>">Home</a></li>
+                                    <li class="home"><a href="<?php echo base_url('User/Home'); ?>">Home</a></li>
                                     <li><a href="<?php echo base_url(); ?>Blog">Blogs</a></li>
                                     <!-- <li><a href="<?php echo base_url();?>User/Login">Login</a></li> -->
                                    <!--  <li><a href="<?php echo base_url();?>User/Login"><img width="60" height="60" src="<?php echo base_url('assets/images/teacher/1.png'); ?>" class="rounded"></a></li> -->

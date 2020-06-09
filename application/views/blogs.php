@@ -17,7 +17,14 @@
 
     <!-- Header -->            
     <header id="header" class="header clearfix"> 
-       <?php $this->load->view('header'); ?>
+        <?php 
+            if (isset($_SESSION['User'])){ 
+                $this->load->view('User/header'); 
+            }
+            else{
+                $this->load->view('header'); 
+            }
+        ?>    
     </header><!-- /.header -->
             
     
