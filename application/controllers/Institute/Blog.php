@@ -24,6 +24,13 @@ class Blog extends  CI_Controller{
 		$this->load->view('Institute/index',$data);
 	}
 
+	public function editblog(){
+		check_login_status();
+		$data['page']='editblog';
+		$data['title']='Edit Blog';
+		$this->load->view('Institute/index',$data);
+	}
+
 	public  function  insert(){
 		check_login_status();
 		$data = $this->input->post();

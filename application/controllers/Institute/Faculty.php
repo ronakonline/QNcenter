@@ -33,4 +33,11 @@ class Faculty extends CI_Controller{
 		$data['page'] = 'allfaculty';
 		$this->load->view('Institute/index',$data);
 	}
+
+	public function editfaculty(){
+		check_login_status();
+		$data['page']='editfaculty';
+		$data['title']='Edit Faculty';
+		$this->load->view('Institute/index',$data);
+	}
 }

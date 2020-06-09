@@ -43,6 +43,13 @@ class Student extends CI_Controller
 		$this->load->view('Institute/index', $data);
 	}
 
+	public function editstudent(){
+		check_login_status();
+		$data['page']='editstudent';
+		$data['title']='Edit Student';
+		$this->load->view('Institute/index',$data);
+	}
+
 	public function import_excel()
 	{
 		check_login_status();

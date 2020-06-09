@@ -36,4 +36,12 @@ class Post extends  CI_Controller{
 		}
 		redirect('Institute/Post/addpost');
 	}
+
+
+	public function editpost(){
+		check_login_status();
+		$data['page']='editpost';
+		$data['title']='Edit Post';
+		$this->load->view('Institute/index',$data);
+	}
 }

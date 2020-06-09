@@ -40,16 +40,16 @@
                                 <div class="wrap-type-input">                    
                                     <div class="input-wrap email">
                                         <p>Email*</p>
-                                        <input type="text" value="" tabindex="3" name="email" id="email" required>
+                                        <input type="text" value="" tabindex="2" name="email" id="email" required>
                                     </div>
                                     <div class="input-wrap">
                                         <p>Password *</p>
-                                        <input type="password" value="" tabindex="4" name="password" id="password" required>
+                                        <input type="password" value="" tabindex="3" name="password" id="password" required>
                                     </div>                                    
                                 </div>
                             </div>
                             <div class="submit-wrap">
-                                <button type="submit">Register</button>
+                                <button type="submit" tabindex="4">Register</button>
                             </div>
                             <!-- <div class="option-login">
                                 <div class="remember">

@@ -36,12 +36,8 @@
 										    Action
 										  </button>
 										  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    <a class="dropdown-item" href="#">Edit</a>
-										    <a class="dropdown-item" href="<?php echo base_url('Sadmin/Institutes/action/delete/').$row->aid; ?>">Delete</a>
-											  <?php if($row->averified==0){ ?>
-										    <a class="dropdown-item" href="<?php echo base_url('Sadmin/Institutes/action/verify/').$row->aid; ?>">Verify</a>
-										    <?php } ?>
-											  <a class="dropdown-item" href="<?php echo base_url('Sadmin/Institutes/action/ban/').$row->aid; ?>"">Banned</a>
+										    <a class="dropdown-item" href="<?php echo base_url('Institute/Blog/editblog'); ?>">Edit</a>
+										    <a class="dropdown-item" href="#">Delete</a>
 										  </div>
 										</div>
 									</td>

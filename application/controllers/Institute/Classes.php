@@ -45,4 +45,11 @@ class Classes extends CI_Controller{
 		}
 
 	}
+
+	public function editclass(){
+		check_login_status();
+		$data['page']='editclass';
+		$data['title']='Edit Class';
+		$this->load->view('Institute/index',$data);
+	}
 }

@@ -38,4 +38,11 @@ class Department extends CI_Controller{
 		$data['departments'] = $this->DepartmentM->all();
 		$this->load->view('Institute/index',$data);
 	}
+
+	public function editdepartment(){
+		check_login_status();
+		$data['page']='editdepartment';
+		$data['title']='Edit Department';
+		$this->load->view('Institute/index',$data);
+	}
 }
