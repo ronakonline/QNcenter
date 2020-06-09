@@ -55,8 +55,12 @@
                     <tbody>
                         <tr>
                             <td>Picture</td>
+                            <td>
+                                <img id="output" src="<?php echo base_url('uploads/thumbnail.png'); ?>" style="width: 100px;height: 100px;"/><br><br>
+                                <input type="file" accept="image/*" onchange="loadFile(event)">
+                            </td>
                             <td></td>
-                            <td><button class="btn btn-outline-primary">Edit</button></td>
+                            <!-- <td><button class="btn btn-outline-primary">Edit</button></td> -->
                         </tr>
                         <tr>
                             <td>Name</td>
@@ -99,6 +103,15 @@
 
     </div>
     
+    <script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+    }
+  };
+</script>
     <!-- Javascript -->
     <?php $this->load->view('scripts'); ?>
 </html>

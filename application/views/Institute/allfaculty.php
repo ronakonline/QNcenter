@@ -30,7 +30,21 @@
 									<td><?php echo $row->name; ?></td>
 									<td><?php echo $row->department; ?></td>
 									<td><?php echo $row->email; ?></td>
-									<td></td>
+									<td>
+										<div class="dropdown">
+										  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    Action
+										  </button>
+										  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    <a class="dropdown-item" href="#">Edit</a>
+										    <a class="dropdown-item" href="<?php echo base_url('Sadmin/Institutes/action/delete/').$row->aid; ?>">Delete</a>
+											  <?php if($row->averified==0){ ?>
+										    <a class="dropdown-item" href="<?php echo base_url('Sadmin/Institutes/action/verify/').$row->aid; ?>">Verify</a>
+										    <?php } ?>
+											  <a class="dropdown-item" href="<?php echo base_url('Sadmin/Institutes/action/ban/').$row->aid; ?>">Banned</a>
+										  </div>
+										</div>
+									</td>
 								</tr>
 							<?php } ?>
 

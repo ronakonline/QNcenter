@@ -12,7 +12,7 @@ class Profile extends CI_Controller {
 	public function index(){
 		check_userlogin_status();
     	$data['title']='Profile || QN-Center';
-        $this->load->view('User/profile',$data);
+        $this->load->view('User/user_profile',$data);
 	}
 	
 }
