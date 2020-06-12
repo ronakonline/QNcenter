@@ -22,7 +22,7 @@
 					<div class="card">
 						<div class="card-body b-b">
 							<!-- <h4>Add Class</h4> -->
-							<form class="form-material mt-4" action="<?php echo base_url('Institute/Post/insert'); ?>"  method="post">
+							<form class="form-material mt-4" action="<?php echo base_url('Institute/Post/insert'); ?>"  method="post" enctype="multipart/form-data">
 								<!-- Input -->
 								<div class="body">
 									<div class="row clearfix">
@@ -63,6 +63,12 @@
 												</textarea>
 			                            	</div>
 			                            </div>
+										<div class="col-sm-12">
+											<div class="form-group">
+												<label for="department">Attachment</label>
+												<input type="file" class="form-control" placeholder="Enter Post Title" name="attachment">
+											</div>
+										</div>
 									</div>
 								</div>
 								<button type="submit" class="btn btn-primary mt-2"><i
