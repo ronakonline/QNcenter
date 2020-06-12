@@ -10,6 +10,8 @@
 			</div>
 		</div>
 	</header>
+	<?php successmsg();
+		  errormsg(); ?>
 	<div class="container-fluid my-3">
 		<div class="row">
 			<div class="col-md-12">
@@ -42,8 +44,8 @@
 										    Action
 										  </button>
 										  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										    <a class="dropdown-item" href="<?php echo base_url('Institute/Blog/editpost'); ?>">Edit</a>
-										    <a class="dropdown-item" href="#">Delete</a>
+										    <a class="dropdown-item" href="<?php echo base_url('Institute/Post/editpost'); ?>">Edit</a>
+										    <a class="dropdown-item" href="<?php echo base_url('Institute/Post/deletepost/').$row->nid; ?>">Delete</a>
 										  </div>
 										</div>
 									</td>

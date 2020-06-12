@@ -14,7 +14,7 @@ class FacultyM extends CI_Model{
 	}
 
 	public function all(){
-		$q = $this->db->where('aid',$_SESSION['Institute']->aid)->get('faculty');
+		$q = $this->db->where('aid',$_SESSION['Institute']->aid)->where('isdeleted',0)->get('faculty');
 		return $q->result();
 	}
 }

@@ -19,6 +19,7 @@ class StudentM extends CI_Model{
 		$this->db->select('users.uid as id,users.name as name, department.name as dname, class.name as cname,users.email as email,users.enrollment_no as eno');
 		$this->db->from('users');
 		$this->db->where('users.aid',$_SESSION['Institute']->aid);
+		$this->db->where('users.isdeleted',0);
 		$this->db->join('department','users.department=department.did');
 		$this->db->join('class','users.class=class.id');
 		$q = $this->db->get();

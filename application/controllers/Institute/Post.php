@@ -44,4 +44,15 @@ class Post extends  CI_Controller{
 		$data['title']='Edit Post';
 		$this->load->view('Institute/index',$data);
 	}
+
+	public function deletepost($id){
+		check_login_status();
+		$op= $this->db->where('nid',$id)->update('notice',array('isdeleted'=>1));
+			if($op==1){
+				$_SESSION['success'] = "Deleted Successfully";
+			}else{
+				$_SESSION['error'] = "Error Deleting";
+			}
+		redirect('Institute/Post/allpost');
+	}
 }

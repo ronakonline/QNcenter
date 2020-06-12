@@ -31,6 +31,17 @@ class Blog extends  CI_Controller{
 		$this->load->view('Institute/index',$data);
 	}
 
+	public function deleteblog($id){
+		check_login_status();
+		$op= $this->db->where('id',$id)->update('blog',array('isdeleted'=>1));
+			if($op==1){
+				$_SESSION['success'] = "Deleted Successfully";
+			}else{
+				$_SESSION['error'] = "Error Deleting";
+			}
+		redirect('Institute/Blog/allblog');
+	}
+
 	public  function  insert(){
 		check_login_status();
 		$data = $this->input->post();

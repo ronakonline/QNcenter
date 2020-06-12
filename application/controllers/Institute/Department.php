@@ -45,4 +45,17 @@ class Department extends CI_Controller{
 		$data['title']='Edit Department';
 		$this->load->view('Institute/index',$data);
 	}
+
+	public function deletedepartment($id){
+		check_login_status();
+		$op= $this->db->where('did',$id)->update('department',array('isdeleted'=>1));
+			if($op==1){
+				$_SESSION['success'] = "Deleted Successfully";
+			}else{
+				$_SESSION['error'] = "Error Deleting";
+			}
+		redirect('Institute/Department/alldepartment');
+	}
+
+	
 }

@@ -10,7 +10,7 @@ class BlogM extends  CI_Model{
 	}
 
 	public function  all($data){
-		$q = $this->db->where('author',$data['aid'])->get($this->table);
+		$q = $this->db->where('author',$data['aid'])->where('isdeleted',0)->get($this->table);
 		// $q = $this->db->get($this->table);
 		return $q->result();
 	}

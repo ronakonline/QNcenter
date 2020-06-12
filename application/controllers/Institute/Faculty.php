@@ -40,4 +40,15 @@ class Faculty extends CI_Controller{
 		$data['title']='Edit Faculty';
 		$this->load->view('Institute/index',$data);
 	}
+
+	public function deletefaculty($id){
+		check_login_status();
+		$op= $this->db->where('id',$id)->update('faculty',array('isdeleted'=>1));
+			if($op==1){
+				$_SESSION['success'] = "Deleted Successfully";
+			}else{
+				$_SESSION['error'] = "Error Deleting";
+			}
+		redirect('Institute/Faculty/allfaculty');
+	}
 }

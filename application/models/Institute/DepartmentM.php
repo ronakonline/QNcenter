@@ -12,7 +12,9 @@ class DepartmentM extends CI_Model{
 		return $op;
 	}
 	function all(){
-		$q = $this->db->where('aid',$_SESSION['Institute']->aid)->get('department');
+		$q = $this->db->where('aid',$_SESSION['Institute']->aid)->where('isdeleted',0)->get('department');
 		return $q->result();
 	}
+
+	
 }

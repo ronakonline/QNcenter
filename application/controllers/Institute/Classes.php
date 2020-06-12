@@ -52,4 +52,15 @@ class Classes extends CI_Controller{
 		$data['title']='Edit Class';
 		$this->load->view('Institute/index',$data);
 	}
+
+	public function deleteclass($id){
+		check_login_status();
+		$op= $this->db->where('id',$id)->update('class',array('isdeleted'=>1));
+			if($op==1){
+				$_SESSION['success'] = "Deleted Successfully";
+			}else{
+				$_SESSION['error'] = "Error Deleting";
+			}
+		redirect('Institute/Classes/allclass');
+	}
 }
