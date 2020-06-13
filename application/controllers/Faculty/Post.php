@@ -24,6 +24,17 @@ class Post extends  CI_Controller{
 		$this->load->view('Faculty/index',$data);
 	}
 
+	public function deletepost($id){
+		check_faculty_login_status();
+		$op= $this->db->where('nid',$id)->update('notice',array('isdeleted'=>1));
+			if($op==1){
+				$_SESSION['success'] = "Deleted Successfully";
+			}else{
+				$_SESSION['error'] = "Error Deleting";
+			}
+		redirect('Faculty/Post/allpost');
+	}
+
 	public  function  insert(){
 		check_faculty_login_status();
 		$data = $this->input->post();

@@ -43,6 +43,17 @@ class Student extends CI_Controller
 		$this->load->view('Faculty/index', $data);
 	}
 
+	public function deletestudent($id){
+		check_login_status();
+		$op= $this->db->where('uid',$id)->update('users',array('isdeleted'=>1));
+			if($op==1){
+				$_SESSION['success'] = "Deleted Successfully";
+			}else{
+				$_SESSION['error'] = "Error Deleting";
+			}
+		redirect('Institute/Student/allstudent');
+	}
+
 	public function import_excel()
 	{
 		check_faculty_login_status();

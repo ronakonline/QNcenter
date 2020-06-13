@@ -20,7 +20,7 @@ class PostM extends CI_Model{
 	}
 
 	function allclasses(){
-		$q = $this->db->where('did',$_SESSION['Faculty']->department)->get('class');
+		$q = $this->db->where('did',$_SESSION['Faculty']->department)->where('isdeleted',0)->get('class');
 		return $q->result();
 	}
 }

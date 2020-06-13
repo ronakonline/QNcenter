@@ -34,7 +34,17 @@
 									<td><?php echo $row->dname; ?></td>
 									<td><?php echo $row->cname; ?></td>
 									<td><?php echo $row->email; ?></td>
-									<td></td>
+									<td>
+										<div class="dropdown">
+										  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    Action
+										  </button>
+										  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    <a class="dropdown-item" href="<?php echo base_url('Faculty/Student/editstudent'); ?>">Edit</a>
+										    <a class="dropdown-item" href="<?php echo base_url('Faculty/Student/deletestudent/').$row->uid; ?>">Delete</a>
+										  </div>
+										</div>
+									</td>
 								</tr>
 							<?php } ?>
 								

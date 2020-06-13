@@ -36,7 +36,17 @@
 									<td><?php echo $row->did; ?></td>
 									<td><?php echo $row->cid; ?></td>
 									<td><?php echo $row->title; ?></td>
-									<td></td>
+									<td>
+										<div class="dropdown">
+										  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    Action
+										  </button>
+										  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    <a class="dropdown-item" href="<?php echo base_url('Faculty/Post/editpost'); ?>">Edit</a>
+										    <a class="dropdown-item" href="<?php echo base_url('Faculty/Post/deletepost/').$row->nid; ?>">Delete</a>
+										  </div>
+										</div>
+									</td>
 								</tr>
 								<?php } ?>
 							</tbody>

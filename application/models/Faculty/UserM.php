@@ -6,7 +6,7 @@ class UserM extends CI_Model{
 		$this->load->database();
 	}
 	public function  checklogin($data){
-		$q = $this->db->where('email',$data['username'])->where('password',$data['password'])->where('is_deleted',0)->get('faculty');
+		$q = $this->db->where('email',$data['username'])->where('password',$data['password'])->where('isdeleted',0)->get('faculty');
 		if($q->num_rows()){
 			return $q->row();
 		}else{
